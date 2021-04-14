@@ -575,6 +575,7 @@ h1, h2, h3, h4, h5,
 /* Blocks */
 .header-bar {
   float: left;
+  z-index: 100;
   width: 250px;
   height: 100vh;
   min-height: 400px;
@@ -642,6 +643,7 @@ h1, h2, h3, h4, h5,
 
 
 .main-content {
+  z-index: 100;
   float: right;
   width: calc(100% - 250px); 
   margin-right:10px;}
