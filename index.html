@@ -3,6 +3,9 @@
    <head>
       <title>Caré Photography</title>
       <meta charset="utf-8" />
+      <meta property="og:title" content="Caré Photography" />
+      <meta property="og:description" content="Este site contém algum do meu portfólio de fotografia. Espero que gostem." />
+      <meta property="og:image" content="images/IMG_4301.JPG" />
       <meta
          name="viewport"
          content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -52,37 +55,41 @@
             </div>
             <div class="main-menu">
                <ul class="js-clone-nav">
-                  <li class="active"><a href="index.html">Página Principal</a></li>
-                  <li class="dropdown">
+                  <li class="active"><a href="#" onclick="filteronmainpage('all', 'pt')">Página Principal</a></li>
+                  <li class="dropdown" class="active">
                      <a href="#lala" class="dropdown-toggle" data-toggle="dropdown" >Portfólio Geral</a>
                      <ul class="dropdown-menu listaitems multi-level" role="listbox">
-                        <li><a href="categories/praia.html" role="option" class="itemlistadropdown">Praias Portuguesas</a></li>
-                        <li><a href="#lala2" role="option" class="itemlistadropdown">Sessões Fotográficas</a></li>
-                        <li><a href="#lala2" role="option" class="itemlistadropdown">Fotografias com GoPro</a></li>
-                        <li><a href="#lala2" role="option" class="itemlistadropdown">Fotografias com Drone</a></li>
-                        <li><a href="#lala2" role="option" class="itemlistadropdown">Fotografias Debaixo de Água</a></li>
+                        <li><a href="#" role="option" class="itemlistadropdown" onclick="filteronmainpage('praiasportuguesas', 'pt')">Praias Portuguesas</a></li>
+                        <li><a href="#" role="option" class="itemlistadropdown" onclick="filteronmainpage('photosessions', 'pt')">Sessões Fotográficas</a></li>
+                        <li><a href="#" role="option" class="itemlistadropdown" onclick="filteronmainpage('gopro', 'pt')">Fotografias com GoPro</a></li>
+                        <li><a href="#" role="option" class="itemlistadropdown" onclick="filteronmainpage('drone', 'pt')">Fotografias com Drone</a></li>
+                        <li><a href="#" role="option" class="itemlistadropdown" onclick="filteronmainpage('underwater', 'pt')">Fotografias Debaixo de Água</a></li>
                      </ul>
                   </li>
-                  <li class="dropdown">
+                  <li class="dropdown" class="active">
                      <a href="#lala" class="dropdown-toggle" data-toggle="dropdown" >Portfólio de Viagens</a>
                      <ul class="dropdown-menu listaitems multi-level" role="listbox">
                         <li class="dropdown-subsubmenu">
                            <a href="#" class="itemlistadropdown">Portugal</a>
                            <ul class="dropdown-menu">
-                              <li><a href="categories/portugal_nazare.html" class="itemlistadropdown">Nazaré</a></li>
-                              <li><a href="categories/portugal_outros.html" class="itemlistadropdown">Outros</a></li>
+                              <li><a href="#" class="itemlistadropdown" onclick="filteronmainpage('portugal', 'pt')">Todos</a></li>
+                              <li><a href="#" class="itemlistadropdown" onclick="filteronmainpage('lourinha', 'pt')">Lourinhã</a></li>
+                              <li><a href="#" class="itemlistadropdown" onclick="filteronmainpage('nazare', 'pt')">Nazaré</a></li>
+                              <li><a href="#" class="itemlistadropdown" onclick="filteronmainpage('otherspt', 'pt')">Outros</a></li>
                            </ul>
                         </li>
                         <li class="dropdown-subsubmenu">
                            <a href="#" class="itemlistadropdown">Reino Unido</a>
                            <ul class="dropdown-menu">
-                              <li><a href="categories/uk_scotland.html" class="itemlistadropdown">Escócia</a></li>
+                              <li><a href="#" class="itemlistadropdown" onclick="filteronmainpage('uk', 'pt')">Todos</a></li>
+                              <li><a href="#" class="itemlistadropdown" onclick="filteronmainpage('scotland', 'pt')">Escócia</a></li>
                            </ul>
                         </li>
                         <li class="dropdown-subsubmenu">
                            <a href="#" class="itemlistadropdown">Marrocos</a>
                            <ul class="dropdown-menu">
-                              <li><a href="categories/morroco_marrakesh.html" class="itemlistadropdown">Marraquexe</a></li>
+                              <li><a href="#" class="itemlistadropdown" onclick="filteronmainpage('morroco', 'pt')">Todos</a></li>
+                              <li><a href="#" class="itemlistadropdown" onclick="filteronmainpage('marrakesh', 'pt')">Marraquexe</a></li>
                            </ul>
                         </li>
                      </ul>
@@ -116,15 +123,67 @@
                   style="margin-bottom: 20px !important"
                   >
                   <div class="col-12">
-                     <h2 class="text-white mb-4">Todas as Fotografias</h2>
+                     <h2 class="text-white mb-4" id="textotop">Todas as Fotografias</h2>
                   </div>
                </div>
                <div class="row align-items-stretch">
 
+                  <div class="col-6 col-md-6 col-lg-2 imagemitem praiasportuguesas portugal lourinha" data-aos="fade-up">
+                     <a href="https://lh3.googleusercontent.com/d/1IiAKKGHEu8SR86Q3-1ZAUDm3SGLviaTL" class="d-block photo-item" data-fancybox="gallery"  data-caption="<strong>Single photo</strong><br>Teste teste teste">
+                       <img src="https://lh3.googleusercontent.com/d/1IiAKKGHEu8SR86Q3-1ZAUDm3SGLviaTL" alt="Image" class="img-fluid">
+                       <div class="photo-text-more">
+                         <span class="icon icon-search"></span>
+                       </div>
+                     </a>
+                   </div>
+                   <div class="col-6 col-md-6 col-lg-2 imagemitem praiasportuguesas portugal lourinha" data-aos="fade-up" data-aos-delay="100">
+                     <a href="https://lh3.googleusercontent.com/d/1NguKtgwwnkgcrLFT4ZzbAOMUVYw0P1-h" class="d-block photo-item" data-fancybox="gallery">
+                       <img src="https://lh3.googleusercontent.com/d/1NguKtgwwnkgcrLFT4ZzbAOMUVYw0P1-h" alt="Image" class="img-fluid">
+                       <div class="photo-text-more">
+                         <span class="icon icon-search"></span>
+                       </div>
+                     </a>
+                   </div>
+                   <div class="col-6 col-md-6 col-lg-8 imagemitem praiasportuguesas portugal lourinha" data-aos="fade-up" data-aos-delay="100">
+                     <a href="https://lh3.googleusercontent.com/d/1UVHjBg-YwsFf0PFNCJydbTR7WbNLo7u3" class="d-block photo-item" data-fancybox="gallery">
+                       <img src="https://lh3.googleusercontent.com/d/1UVHjBg-YwsFf0PFNCJydbTR7WbNLo7u3" alt="Image" class="img-fluid">
+                       <div class="photo-text-more">
+                         <span class="icon icon-search"></span>
+                       </div>
+                     </a>
+                   </div>
+                 
+                   <!-- Linha 2 -->
+                 
+                   <div class="col-6 col-md-6 col-lg-2 imagemitem praiasportuguesas portugal lourinha" data-aos="fade-up" data-aos-delay="100">
+                     <a href="https://lh3.googleusercontent.com/d/1biSL1QIvBgbyw7NhXgGa1RAQDe6WuGH_" class="d-block photo-item" data-fancybox="gallery">
+                       <img src="https://lh3.googleusercontent.com/d/1biSL1QIvBgbyw7NhXgGa1RAQDe6WuGH_" alt="Image" class="img-fluid">
+                       <div class="photo-text-more">
+                         <span class="icon icon-search"></span>
+                       </div>
+                     </a>
+                   </div>
+                   <div class="col-6 col-md-6 col-lg-8 imagemitem praiasportuguesas portugal lourinha" data-aos="fade-up" data-aos-delay="100">
+                     <a href="https://lh3.googleusercontent.com/d/1C7l2q3gcCmXPI1WyHWMywQh9KZl8vG4A" class="d-block photo-item" data-fancybox="gallery">
+                       <img src="https://lh3.googleusercontent.com/d/1C7l2q3gcCmXPI1WyHWMywQh9KZl8vG4A" alt="Image" class="img-fluid">
+                       <div class="photo-text-more">
+                         <span class="icon icon-search"></span>
+                       </div>
+                     </a>
+                   </div>
+                 <div class="col-6 col-md-6 col-lg-2 imagemitem praiasportuguesas portugal lourinha" data-aos="fade-up">
+                     <a href="https://lh3.googleusercontent.com/d/1M8UKOadox_bR9jAm9vEHCGUk8rvpZ7hM" class="d-block photo-item" data-fancybox="gallery"  data-caption="<strong>Single photo</strong><br>Teste teste teste">
+                       <img src="https://lh3.googleusercontent.com/d/1M8UKOadox_bR9jAm9vEHCGUk8rvpZ7hM" alt="Image" class="img-fluid">
+                       <div class="photo-text-more">
+                         <span class="icon icon-search"></span>
+                       </div>
+                     </a>
+                   </div>
+
 
                   <!-- LINHA -->
 
-                  <div class="col-6 col-md-6 col-lg-2" data-aos="fade-up" data-aos-delay="100">
+                  <div class="col-6 col-md-6 col-lg-2 imagemitem morroco marrakesh" data-aos="fade-up" data-aos-delay="100">
                      <a href="https://lh3.googleusercontent.com/d/1vYU-ZTmEHAjW05eudLm-F0MNxe-xpMMP" class="d-block photo-item" data-fancybox="gallery">
                        <img src="https://lh3.googleusercontent.com/d/1vYU-ZTmEHAjW05eudLm-F0MNxe-xpMMP" alt="Image" class="img-fluid">
                        <div class="photo-text-more">
@@ -132,7 +191,7 @@
                        </div>
                      </a>
                    </div>
-                   <div class="col-6 col-md-6 col-lg-2" data-aos="fade-up" data-aos-delay="100">
+                   <div class="col-6 col-md-6 col-lg-2 imagemitem morroco marrakesh" data-aos="fade-up" data-aos-delay="100">
                      <a href="https://lh3.googleusercontent.com/d/1VY2TtrhWCzKMWbAcxM2P0GmxToRY1WqW" class="d-block photo-item" data-fancybox="gallery">
                        <img src="https://lh3.googleusercontent.com/d/1VY2TtrhWCzKMWbAcxM2P0GmxToRY1WqW" alt="Image" class="img-fluid">
                        <div class="photo-text-more">
@@ -140,7 +199,7 @@
                        </div>
                      </a>
                    </div>
-                   <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                   <div class="col-6 col-md-6 col-lg-4 imagemitem morroco marrakesh" data-aos="fade-up" data-aos-delay="100">
                      <a href="https://lh3.googleusercontent.com/d/1y-0G5eOv8ffsM-9JUGiSdfxc2_AJ5E6_" class="d-block photo-item" data-fancybox="gallery">
                        <img src="https://lh3.googleusercontent.com/d/1y-0G5eOv8ffsM-9JUGiSdfxc2_AJ5E6_" alt="Image" class="img-fluid">
                        <div class="photo-text-more">
@@ -148,7 +207,7 @@
                        </div>
                      </a>
                    </div>
-                 <div class="col-6 col-md-6 col-lg-2" data-aos="fade-up">
+                 <div class="col-6 col-md-6 col-lg-2 imagemitem morroco marrakesh" data-aos="fade-up">
                      <a href="https://lh3.googleusercontent.com/d/1JEuV0mdbmZAjagbEi7kikdDhX2eAtGZm" class="d-block photo-item" data-fancybox="gallery"  data-caption="<strong>Single photo</strong><br>Teste teste teste">
                        <img src="https://lh3.googleusercontent.com/d/1JEuV0mdbmZAjagbEi7kikdDhX2eAtGZm" alt="Image" class="img-fluid">
                        <div class="photo-text-more">
@@ -156,7 +215,7 @@
                        </div>
                      </a>
                    </div>
-                   <div class="col-6 col-md-6 col-lg-2" data-aos="fade-up" data-aos-delay="100">
+                   <div class="col-6 col-md-6 col-lg-2 imagemitem morroco marrakesh" data-aos="fade-up" data-aos-delay="100">
                      <a href="https://lh3.googleusercontent.com/d/1_2mUeUN0-9sMyFuzypC6OMZN-nXTlnbv" class="d-block photo-item" data-fancybox="gallery">
                        <img src="https://lh3.googleusercontent.com/d/1_2mUeUN0-9sMyFuzypC6OMZN-nXTlnbv" alt="Image" class="img-fluid">
                        <div class="photo-text-more">
@@ -167,49 +226,92 @@
 
                   <!-- Linha  -->
 		
-        <div class="col-6 col-md-6 col-lg-2" data-aos="fade-up" data-aos-delay="100">
-         <a href="https://lh3.googleusercontent.com/d/1sEFHVyXG3g87tKMI0qUXEkizpPWgZj6w" class="d-block photo-item" data-fancybox="gallery">
-           <img src="https://lh3.googleusercontent.com/d/1sEFHVyXG3g87tKMI0qUXEkizpPWgZj6w" alt="Image" class="img-fluid">
-           <div class="photo-text-more">
-             <span class="icon icon-search"></span>
-           </div>
-         </a>
-       </div>
-       <div class="col-6 col-md-6 col-lg-2" data-aos="fade-up" data-aos-delay="100">
-         <a href="https://lh3.googleusercontent.com/d/1XJVVD7uEOgRyJRZNVM_2gHVbAXbwalqP" class="d-block photo-item" data-fancybox="gallery">
-           <img src="https://lh3.googleusercontent.com/d/1XJVVD7uEOgRyJRZNVM_2gHVbAXbwalqP" alt="Image" class="img-fluid">
-           <div class="photo-text-more">
-             <span class="icon icon-search"></span>
-           </div>
-         </a>
-       </div>
-       <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-         <a href="https://lh3.googleusercontent.com/d/1MXo9TXmzIefRssjzgk9J7qhNK-zmajss" class="d-block photo-item" data-fancybox="gallery">
-           <img src="https://lh3.googleusercontent.com/d/1MXo9TXmzIefRssjzgk9J7qhNK-zmajss" alt="Image" class="img-fluid">
-           <div class="photo-text-more">
-             <span class="icon icon-search"></span>
-           </div>
-         </a>
-       </div>
-     <div class="col-6 col-md-6 col-lg-2" data-aos="fade-up">
-         <a href="https://lh3.googleusercontent.com/d/1-4Va1gzhAgcBa0hZsO8C6BaaqkCpRGGM" class="d-block photo-item" data-fancybox="gallery"  data-caption="<strong>Single photo</strong><br>Teste teste teste">
-           <img src="https://lh3.googleusercontent.com/d/1-4Va1gzhAgcBa0hZsO8C6BaaqkCpRGGM" alt="Image" class="img-fluid">
-           <div class="photo-text-more">
-             <span class="icon icon-search"></span>
-           </div>
-         </a>
-       </div>
-       <div class="col-6 col-md-6 col-lg-2" data-aos="fade-up" data-aos-delay="100">
-         <a href="https://lh3.googleusercontent.com/d/1zDqSK9yECtBiJPbmZWfkHuue5JzZUG9o" class="d-block photo-item" data-fancybox="gallery">
-           <img src="https://lh3.googleusercontent.com/d/1zDqSK9yECtBiJPbmZWfkHuue5JzZUG9o" alt="Image" class="img-fluid">
-           <div class="photo-text-more">
-             <span class="icon icon-search"></span>
-           </div>
-         </a>
-       </div>
-			   
+            <div class="col-6 col-md-6 col-lg-2 imagemitem uk scotland" data-aos="fade-up" data-aos-delay="100">
+               <a href="https://lh3.googleusercontent.com/d/1sEFHVyXG3g87tKMI0qUXEkizpPWgZj6w" class="d-block photo-item" data-fancybox="gallery">
+               <img src="https://lh3.googleusercontent.com/d/1sEFHVyXG3g87tKMI0qUXEkizpPWgZj6w" alt="Image" class="img-fluid">
+               <div class="photo-text-more">
+                  <span class="icon icon-search"></span>
+               </div>
+               </a>
+            </div>
+            <div class="col-6 col-md-6 col-lg-2 imagemitem uk scotland" data-aos="fade-up" data-aos-delay="100">
+               <a href="https://lh3.googleusercontent.com/d/1XJVVD7uEOgRyJRZNVM_2gHVbAXbwalqP" class="d-block photo-item" data-fancybox="gallery">
+               <img src="https://lh3.googleusercontent.com/d/1XJVVD7uEOgRyJRZNVM_2gHVbAXbwalqP" alt="Image" class="img-fluid">
+               <div class="photo-text-more">
+                  <span class="icon icon-search"></span>
+               </div>
+               </a>
+            </div>
+            <div class="col-6 col-md-6 col-lg-4 imagemitem uk scotland" data-aos="fade-up" data-aos-delay="100">
+               <a href="https://lh3.googleusercontent.com/d/1MXo9TXmzIefRssjzgk9J7qhNK-zmajss" class="d-block photo-item" data-fancybox="gallery">
+               <img src="https://lh3.googleusercontent.com/d/1MXo9TXmzIefRssjzgk9J7qhNK-zmajss" alt="Image" class="img-fluid">
+               <div class="photo-text-more">
+                  <span class="icon icon-search"></span>
+               </div>
+               </a>
+            </div>
+            <div class="col-6 col-md-6 col-lg-2 imagemitem uk scotland" data-aos="fade-up">
+               <a href="https://lh3.googleusercontent.com/d/1-4Va1gzhAgcBa0hZsO8C6BaaqkCpRGGM" class="d-block photo-item" data-fancybox="gallery"  data-caption="<strong>Single photo</strong><br>Teste teste teste">
+               <img src="https://lh3.googleusercontent.com/d/1-4Va1gzhAgcBa0hZsO8C6BaaqkCpRGGM" alt="Image" class="img-fluid">
+               <div class="photo-text-more">
+                  <span class="icon icon-search"></span>
+               </div>
+               </a>
+            </div>
+            <div class="col-6 col-md-6 col-lg-2 imagemitem uk scotland" data-aos="fade-up" data-aos-delay="100">
+               <a href="https://lh3.googleusercontent.com/d/1zDqSK9yECtBiJPbmZWfkHuue5JzZUG9o" class="d-block photo-item" data-fancybox="gallery">
+               <img src="https://lh3.googleusercontent.com/d/1zDqSK9yECtBiJPbmZWfkHuue5JzZUG9o" alt="Image" class="img-fluid">
+               <div class="photo-text-more">
+                  <span class="icon icon-search"></span>
+               </div>
+               </a>
+            </div>
+                  
+            <!-- Linha 4 -->
+               
+            <div class="col-6 col-md-6 col-lg-2 imagemitem praiasportuguesas portugal lourinha" data-aos="fade-up" data-aos-delay="100">
+               <a href="https://lh3.googleusercontent.com/d/161u_q7aNrVEGQ-G9lmN2xbxVV90Sm8Q2" class="d-block photo-item" data-fancybox="gallery">
+               <img src="https://lh3.googleusercontent.com/d/161u_q7aNrVEGQ-G9lmN2xbxVV90Sm8Q2" alt="Image" class="img-fluid">
+               <div class="photo-text-more">
+                  <span class="icon icon-search"></span>
+               </div>
+               </a>
+            </div>
+            <div class="col-6 col-md-6 col-lg-2 imagemitem praiasportuguesas portugal lourinha" data-aos="fade-up" data-aos-delay="100">
+               <a href="https://lh3.googleusercontent.com/d/17o5M3fRTFUTjtnPAOTCX99A8GkpYto1Q" class="d-block photo-item" data-fancybox="gallery">
+               <img src="https://lh3.googleusercontent.com/d/17o5M3fRTFUTjtnPAOTCX99A8GkpYto1Q" alt="Image" class="img-fluid">
+               <div class="photo-text-more">
+                  <span class="icon icon-search"></span>
+               </div>
+               </a>
+            </div>
+            <div class="col-6 col-md-6 col-lg-4 imagemitem praiasportuguesas portugal lourinha" data-aos="fade-up" data-aos-delay="100">
+               <a href="https://lh3.googleusercontent.com/d/18a828W41lMLO3QacY97idyspmK9lVcxL" class="d-block photo-item" data-fancybox="gallery">
+               <img src="https://lh3.googleusercontent.com/d/18a828W41lMLO3QacY97idyspmK9lVcxL" alt="Image" class="img-fluid">
+               <div class="photo-text-more">
+                  <span class="icon icon-search"></span>
+               </div>
+               </a>
+            </div>
+            <div class="col-6 col-md-6 col-lg-2 imagemitem praiasportuguesas portugal lourinha" data-aos="fade-up" data-aos-delay="100">
+               <a href="https://lh3.googleusercontent.com/d/1CvdJBSNL1M-00MaG8M_5gmPII3ws6Pda" class="d-block photo-item" data-fancybox="gallery">
+               <img src="https://lh3.googleusercontent.com/d/1CvdJBSNL1M-00MaG8M_5gmPII3ws6Pda" alt="Image" class="img-fluid">
+               <div class="photo-text-more">
+                  <span class="icon icon-search"></span>
+               </div>
+               </a>
+            </div>
+            <div class="col-6 col-md-6 col-lg-2 imagemitem praiasportuguesas portugal lourinha" data-aos="fade-up" data-aos-delay="100">
+               <a href="https://lh3.googleusercontent.com/d/1UEKezIR58JxAlqi2BkNtyd4VCN13HlGH" class="d-block photo-item" data-fancybox="gallery">
+               <img src="https://lh3.googleusercontent.com/d/1UEKezIR58JxAlqi2BkNtyd4VCN13HlGH" alt="Image" class="img-fluid">
+               <div class="photo-text-more">
+                  <span class="icon icon-search"></span>
+               </div>
+               </a>
+            </div>
+
 				<!-- LINHA -->
-				<div class="col-6 col-md-6 col-lg-2" data-aos="fade-up" data-aos-delay="100">
+				<div class="col-6 col-md-6 col-lg-2 imagemitem portugal otherspt underwater gopro" data-aos="fade-up" data-aos-delay="100">
 				  <a href="https://lh3.googleusercontent.com/d/19-Ez0VK83dDYpnDLY1ZwVlSa9DeB1orK" class="d-block photo-item" data-fancybox="gallery">
 					<img src="https://lh3.googleusercontent.com/d/19-Ez0VK83dDYpnDLY1ZwVlSa9DeB1orK" alt="Image" class="img-fluid">
 					<div class="photo-text-more">
@@ -217,7 +319,7 @@
 					</div>
 				  </a>
 				</div>
-				<div class="col-6 col-md-6 col-lg-2" data-aos="fade-up" data-aos-delay="100">
+				<div class="col-6 col-md-6 col-lg-2 imagemitem portugal otherspt" data-aos="fade-up" data-aos-delay="100">
 				  <a href="https://lh3.googleusercontent.com/d/1tBp-1FXK4Oc92NfPdj_4ISsto5lopLvE" class="d-block photo-item" data-fancybox="gallery">
 					<img src="https://lh3.googleusercontent.com/d/1tBp-1FXK4Oc92NfPdj_4ISsto5lopLvE" alt="Image" class="img-fluid">
 					<div class="photo-text-more">
@@ -225,7 +327,7 @@
 					</div>
 				  </a>
 				</div>
-				<div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+				<div class="col-6 col-md-6 col-lg-4 imagemitem portugal otherspt" data-aos="fade-up" data-aos-delay="100">
 				  <a href="https://lh3.googleusercontent.com/d/1tctAqkh7Kf0hhFEfQAPBDf5_dSzZAnGy" class="d-block photo-item" data-fancybox="gallery">
 					<img src="https://lh3.googleusercontent.com/d/1tctAqkh7Kf0hhFEfQAPBDf5_dSzZAnGy" alt="Image" class="img-fluid">
 					<div class="photo-text-more">
@@ -233,7 +335,7 @@
 					</div>
 				  </a>
 				</div>
-				<div class="col-6 col-md-6 col-lg-2" data-aos="fade-up">
+				<div class="col-6 col-md-6 col-lg-2 imagemitem portugal otherspt" data-aos="fade-up">
 				  <a href="https://lh3.googleusercontent.com/d/1chD7MxjdEvP3LnvPRZkHHyd6xv-B5x8X" class="d-block photo-item" data-fancybox="gallery"  data-caption="<strong>Single photo</strong><br>Teste teste teste">
 					<img src="https://lh3.googleusercontent.com/d/1chD7MxjdEvP3LnvPRZkHHyd6xv-B5x8X" alt="Image" class="img-fluid">
 					<div class="photo-text-more">
@@ -241,7 +343,7 @@
 					</div>
 				  </a>
 				</div>
-				<div class="col-6 col-md-6 col-lg-2" data-aos="fade-up" data-aos-delay="100">
+				<div class="col-6 col-md-6 col-lg-2 imagemitem portugal otherspt" data-aos="fade-up" data-aos-delay="100">
 				  <a href="https://lh3.googleusercontent.com/d/1F9GTDfXZiX7OmiFo1RHX8dYkyMy0iSdw" class="d-block photo-item" data-fancybox="gallery">
 					<img src="https://lh3.googleusercontent.com/d/1F9GTDfXZiX7OmiFo1RHX8dYkyMy0iSdw" alt="Image" class="img-fluid">
 					<div class="photo-text-more">
@@ -250,10 +352,12 @@
 				  </a>
 				</div>
 				
+            
+
 				
                   <!-- Linha 6 -->
                   <div
-                     class="col-6 col-md-6 col-lg-2"
+                     class="col-6 col-md-6 col-lg-2 imagemitem praiasportuguesas portugal nazare"
                      data-aos="fade-up"
                      data-aos-delay="100"
                      >
@@ -273,7 +377,7 @@
                      </a>
                   </div>
                   <div
-                     class="col-6 col-md-6 col-lg-8"
+                     class="col-6 col-md-6 col-lg-8 imagemitem praiasportuguesas portugal nazare"
                      data-aos="fade-up"
                      data-aos-delay="100"
                      >
@@ -292,7 +396,7 @@
                         </div>
                      </a>
                   </div>
-                  <div class="col-6 col-md-6 col-lg-2" data-aos="fade-up">
+                  <div class="col-6 col-md-6 col-lg-2 imagemitem praiasportuguesas portugal nazare" data-aos="fade-up">
                      <a
                         href="https://lh3.googleusercontent.com/d/1VWQGRjXEEhc_EEaRKaOC-zkUMl5E8AJn"
                         class="d-block photo-item"
@@ -311,7 +415,7 @@
                   </div>
                   <!-- Linha 7 -->
                   <div
-                     class="col-6 col-md-6 col-lg-2"
+                     class="col-6 col-md-6 col-lg-2 imagemitem praiasportuguesas portugal otherspt"
                      data-aos="fade-up"
                      data-aos-delay="100"
                      >
@@ -331,7 +435,7 @@
                      </a>
                   </div>
                   <div
-                     class="col-6 col-md-6 col-lg-2"
+                     class="col-6 col-md-6 col-lg-2 imagemitem praiasportuguesas portugal lourinha"
                      data-aos="fade-up"
                      data-aos-delay="100"
                      >
@@ -351,7 +455,7 @@
                      </a>
                   </div>
                   <div
-                     class="col-6 col-md-6 col-lg-4"
+                     class="col-6 col-md-6 col-lg-4 imagemitem praiasportuguesas portugal lourinha underwater gopro"
                      data-aos="fade-up"
                      data-aos-delay="100"
                      >
@@ -371,7 +475,7 @@
                      </a>
                   </div>
                   <div
-                     class="col-6 col-md-6 col-lg-2"
+                     class="col-6 col-md-6 col-lg-2 imagemitem praiasportuguesas portugal lourinha"
                      data-aos="fade-up"
                      data-aos-delay="100"
                      >
@@ -391,7 +495,7 @@
                      </a>
                   </div>
                   <div
-                     class="col-6 col-md-6 col-lg-2"
+                     class="col-6 col-md-6 col-lg-2 imagemitem praiasportuguesas portugal otherspt"
                      data-aos="fade-up"
                      data-aos-delay="100"
                      >
@@ -410,9 +514,11 @@
                         </div>
                      </a>
                   </div>
+
+
                   <!-- Linha 8 -->
                   <div
-                     class="col-6 col-md-6 col-lg-2"
+                     class="col-6 col-md-6 col-lg-2 imagemitem praiasportuguesas portugal nazare"
                      data-aos="fade-up"
                      data-aos-delay="100"
                      >
@@ -432,7 +538,7 @@
                      </a>
                   </div>
                   <div
-                     class="col-6 col-md-6 col-lg-8"
+                     class="col-6 col-md-6 col-lg-8 imagemitem praiasportuguesas portugal nazare"
                      data-aos="fade-up"
                      data-aos-delay="100"
                      >
@@ -451,7 +557,7 @@
                         </div>
                      </a>
                   </div>
-                  <div class="col-6 col-md-6 col-lg-2" data-aos="fade-up">
+                  <div class="col-6 col-md-6 col-lg-2 imagemitem praiasportuguesas portugal nazare" data-aos="fade-up">
                      <a
                         href="https://lh3.googleusercontent.com/d/1CB8dCSkIRNb1S6wC5pWf2bZniwhOfKqo"
                         class="d-block photo-item"
@@ -474,7 +580,7 @@
 		
 				<!-- Linha 2 -->
 				
-				<div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+				<div class="col-6 col-md-6 col-lg-4 imagemitem portugal otherspt" data-aos="fade-up" data-aos-delay="100">
 				  <a href="https://lh3.googleusercontent.com/d/1bF6MtAQvqUl0EJbJiMw6A-Gpj3A7MlH9" class="d-block photo-item" data-fancybox="gallery">
 					<img src="https://lh3.googleusercontent.com/d/1bF6MtAQvqUl0EJbJiMw6A-Gpj3A7MlH9" alt="Image" class="img-fluid">
 					<div class="photo-text-more">
@@ -482,7 +588,7 @@
 					</div>
 				  </a>
 				</div>
-				<div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+				<div class="col-6 col-md-6 col-lg-4 imagemitem portugal otherspt" data-aos="fade-up" data-aos-delay="100">
 				  <a href="https://lh3.googleusercontent.com/d/1F9JR4H71MfQ0s2H9WbTmKZDzcHaFJ5Ue" class="d-block photo-item" data-fancybox="gallery">
 					<img src="https://lh3.googleusercontent.com/d/1F9JR4H71MfQ0s2H9WbTmKZDzcHaFJ5Ue" alt="Image" class="img-fluid">
 					<div class="photo-text-more">
@@ -490,7 +596,7 @@
 					</div>
 				  </a>
 				</div>
-				<div class="col-6 col-md-6 col-lg-4" data-aos="fade-up">
+				<div class="col-6 col-md-6 col-lg-4 imagemitem portugal otherspt" data-aos="fade-up">
 				  <a href="https://lh3.googleusercontent.com/d/1pZ2MmAHeG5l6pKqQU4R1jBOy8oDsJBB1" class="d-block photo-item" data-fancybox="gallery"  data-caption="<strong>Single photo</strong><br>Teste teste teste">
 					<img src="https://lh3.googleusercontent.com/d/1pZ2MmAHeG5l6pKqQU4R1jBOy8oDsJBB1" alt="Image" class="img-fluid">
 					<div class="photo-text-more">
@@ -498,6 +604,69 @@
 					</div>
 				  </a>
 				</div>
+
+            <div class="col-6 col-md-6 col-lg-7 imagemitem praiasportuguesas portugal lourinha" data-aos="fade-up">
+               <a href="https://lh3.googleusercontent.com/d/1XQw9dDSmwvrHDtgjx9l2rYQZTh07naQB" class="d-block photo-item" data-fancybox="gallery"  data-caption="<strong>Single photo</strong><br>Teste teste teste">
+                 <img src="https://lh3.googleusercontent.com/d/1XQw9dDSmwvrHDtgjx9l2rYQZTh07naQB" alt="Image" class="img-fluid">
+                 <div class="photo-text-more">
+                   <span class="icon icon-search"></span>
+                 </div>
+               </a>
+             </div>
+             <div class="col-6 col-md-6 col-lg-2 imagemitem praiasportuguesas portugal lourinha" data-aos="fade-up" data-aos-delay="100">
+               <a href="https://lh3.googleusercontent.com/d/1eDxBxywY-FiVwCHVkSKeYKi-Qe04FBiP" class="d-block photo-item" data-fancybox="gallery">
+                 <img src="https://lh3.googleusercontent.com/d/1eDxBxywY-FiVwCHVkSKeYKi-Qe04FBiP" alt="Image" class="img-fluid">
+                 <div class="photo-text-more">
+                   <span class="icon icon-search"></span>
+                 </div>
+               </a>
+             </div>
+             <div class="col-6 col-md-6 col-lg-3 imagemitem praiasportuguesas portugal lourinha" data-aos="fade-up" data-aos-delay="100">
+               <a href="https://lh3.googleusercontent.com/d/1-uCzHhY_yFJerpd1Za_w-2gAgENnr0WE" class="d-block photo-item" data-fancybox="gallery">
+                 <img src="https://lh3.googleusercontent.com/d/1-uCzHhY_yFJerpd1Za_w-2gAgENnr0WE" alt="Image" class="img-fluid">
+                 <div class="photo-text-more">
+                   <span class="icon icon-search"></span>
+                 </div>
+               </a>
+             </div>
+           
+             
+           
+             <!-- Linha 5 -->
+           
+           <div class="col-6 col-md-6 col-lg-3 imagemitem praiasportuguesas portugal lourinha" data-aos="fade-up">
+               <a href="https://lh3.googleusercontent.com/d/19tf6l6vwH6Y-5l056Mbr2FFW9ayOTMGC" class="d-block photo-item" data-fancybox="gallery"  data-caption="<strong>Single photo</strong><br>Teste teste teste">
+                 <img src="https://lh3.googleusercontent.com/d/19tf6l6vwH6Y-5l056Mbr2FFW9ayOTMGC" alt="Image" class="img-fluid">
+                 <div class="photo-text-more">
+                   <span class="icon icon-search"></span>
+                 </div>
+               </a>
+             </div>
+             <div class="col-6 col-md-6 col-lg-3 imagemitem praiasportuguesas portugal lourinha gopro" data-aos="fade-up" data-aos-delay="100">
+               <a href="https://lh3.googleusercontent.com/d/1d2TBLCGOIRoE-9E64wu2TkOHgty7p-z3" class="d-block photo-item" data-fancybox="gallery">
+                 <img src="https://lh3.googleusercontent.com/d/1d2TBLCGOIRoE-9E64wu2TkOHgty7p-z3" alt="Image" class="img-fluid">
+                 <div class="photo-text-more">
+                   <span class="icon icon-search"></span>
+                 </div>
+               </a>
+             </div>
+             <div class="col-6 col-md-6 col-lg-3 imagemitem praiasportuguesas portugal lourinha gopro" data-aos="fade-up" data-aos-delay="100">
+               <a href="https://lh3.googleusercontent.com/d/12mBgSgK7tpp1AuRks4s2tuKRbDuzd1lZ" class="d-block photo-item" data-fancybox="gallery">
+                 <img src="https://lh3.googleusercontent.com/d/12mBgSgK7tpp1AuRks4s2tuKRbDuzd1lZ" alt="Image" class="img-fluid">
+                 <div class="photo-text-more">
+                   <span class="icon icon-search"></span>
+                 </div>
+               </a>
+             </div>
+             <div class="col-6 col-md-6 col-lg-3 imagemitem praiasportuguesas portugal lourinha gopro" data-aos="fade-up" data-aos-delay="100">
+               <a href="https://lh3.googleusercontent.com/d/1N1SuywW9hENAw1-0AlR-NFAm1sOrZjGN" class="d-block photo-item" data-fancybox="gallery">
+                 <img src="https://lh3.googleusercontent.com/d/1N1SuywW9hENAw1-0AlR-NFAm1sOrZjGN" alt="Image" class="img-fluid">
+                 <div class="photo-text-more">
+                   <span class="icon icon-search"></span>
+                 </div>
+               </a>
+             </div>
+
 				  
                </div>
                <div class="row justify-content-center">
@@ -536,5 +705,6 @@
       <script src="js/aos.js"></script>
       <script src="js/jquery.fancybox.min.js"></script>
       <script src="js/main.js"></script>
+      <script src="js/filtroimagens.js"></script>
    </body>
 </html>

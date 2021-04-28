@@ -26,6 +26,13 @@ a:hover {
   text-decoration: none;
 }
 
+.hide-element{
+  display:none;
+}
+.show-element{
+  display:block;
+}
+
 h1,
 h2,
 h3,
