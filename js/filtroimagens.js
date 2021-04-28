@@ -35,7 +35,7 @@ var textosdict = {
     "uk":{
         "pt":"'Reino Unido'", "en":"'United Kingdom'"
     }, 
-    "sctoland":{
+    "scotland":{
         "pt":"'Escócia'", "en":"'Scotland'"
     }, 
     "morroco":{
