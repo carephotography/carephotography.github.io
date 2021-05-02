@@ -26,6 +26,9 @@ var textosdict = {
     "lourinha":{
         "pt":"'Lourinhã'", "en":"'Lourinhã'"
     }, 
+    "lisbon":{
+        "pt":"'Lisboa'", "en":"'Lisbon'"
+    }, 
     "nazare":{
         "pt":"'Nazaré'", "en":"'Nazaré'"
     }, 
