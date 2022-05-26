@@ -135,62 +135,14 @@
     <div class="container-fluid photos">
       <div class="row justify-content-center">
 
-        <div class="col-12">
-          <h2 class="text-white mb-4" style="text-align: center;" id="textotop">Videos</h2>
-       </div>
-        
-       <div class="col-md-12">
-         <h2 class="text-white mb-4" style="text-align: center;font-size: 18px;" data-aos="fade-up">Video com Dji Mini 2 na Ilha Terçeira, Açores, Portugal</h2>
-         <figure class="mb-5" data-aos="fade-up" style="text-align: center;">
-           <iframe width="900" height="619"  src="https://www.youtube.com/embed/p8wiwW-Dj1g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-         </figure>
+          <div class="col-12">
+              <h2 class="text-white mb-4" style="text-align: center;" id="textotop">Videos</h2>
+          </div>
 
-         <p><br><br></p>
-       </div>
-        
-       <div class="col-md-12">
-         <h2 class="text-white mb-4" style="text-align: center;font-size: 18px;" data-aos="fade-up">Video com Dji Mini 2 na Praia da Areia Branca, Lourinhã, Portugal</h2>
-         <figure class="mb-5" data-aos="fade-up" style="text-align: center;">
-           <iframe width="900" height="619"  src="https://www.youtube.com/embed/yauYlS_KF5M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-         </figure>
+      </div>
 
-         <p><br><br></p>
-       </div>
-        
-        <div class="col-md-12">
-          <h2 class="text-white mb-4" style="text-align: center;font-size: 18px;" data-aos="fade-up">Video com Dji Dji Mini 2 na Praia da Areia Branca e Praia Vale dos Frades, Lourinhã, Portugal</h2>
-          <figure class="mb-5" data-aos="fade-up" style="text-align: center;">
-            <iframe width="900" height="619"  src="https://www.youtube.com/embed/QRRjEUmDAuU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </figure>
+      <div class="row justify-content-center contentdiv">
 
-          <p><br><br></p>
-        </div>
-        
-        <div class="col-md-12">
-          <h2 class="text-white mb-4" style="text-align: center;font-size: 18px;" data-aos="fade-up">Video com Drone Dji Mini 2 no Carvoeiro e Benagil, Algarve, Portugal</h2>
-          <figure class="mb-5" data-aos="fade-up" style="text-align: center;">
-            <iframe width="900" height="619"  src="https://www.youtube.com/embed/yU7FudPjlkk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </figure>
-
-          <p><br><br></p>
-        </div>
-        
-        <div class="col-md-12">
-          <h2 class="text-white mb-4" style="text-align: center;font-size: 18px;" data-aos="fade-up">Video com Drone Dji Mini 2 em Lisboa, Portugal</h2>
-          <figure class="mb-5" data-aos="fade-up" style="text-align: center;">
-            <iframe width="900" height="619"  src="https://www.youtube.com/embed/zRTfOTUtOjM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </figure>
-
-          <p><br><br></p>
-        </div>
-        
-        <div class="col-md-12">
-          <h2 class="text-white mb-4" style="text-align: center;font-size: 18px;" data-aos="fade-up">Video com Dji Mavic Mini na Praia Vale dos Frades, Lourinhã, Portugal</h2>
-          <figure class="mb-5" data-aos="fade-up" style="text-align: center;">
-            <iframe width="900" height="619"  src="https://www.youtube.com/embed/2C4FKVUXKc4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </figure>
-
-        </div>
 
       </div>
 
@@ -224,6 +176,29 @@
   <script src="../js/jquery.fancybox.min.js"></script>
 
   <script src="../js/main.js"></script>
+
+  <script>
+      $(document).ready(
+          function () {
+              $.getJSON("../data_video.json", function (data) {
+                  var htmltobeinserted = '';
+                  $.each(data, function (key, value) {
+                      htmltobeinserted = '<div class="col-md-12"> ' +
+                          '<h2 class="text-white mb-4" style="text-align: center;font-size: 18px;" data-aos="fade-up">' + value["title"]["pt"] + '</h2> ' +
+                          '<figure class="mb-5" data-aos="fade-up" style="text-align: center;">' +
+                          ' <iframe width="900" height="619"  src="https://www.youtube.com/embed/' + value["link_video"] + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' +
+                          '</figure>' +
+
+                          '<p><br><br></p>' +
+                          '</div>' + htmltobeinserted;
+
+                  });
+                  $(".contentdiv").html(htmltobeinserted);
+              });
+
+          }
+      );
+  </script>
     
   </body>
 </html>

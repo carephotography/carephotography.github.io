@@ -183,20 +183,14 @@
 	<script>
         $(document).ready(
             function () {
-                $.getJSON("data.json", function (data) {
-                    var htmltobeinserted = '';
+                $.get("data_video copy.json", function (data) {
+                    console.log(data)
                     $.each(data, function (key, value) {
-                        htmltobeinserted = htmltobeinserted +  '<div class="col-md-12"> ' +
-                            '<h2 class="text-white mb-4" style="text-align: center;font-size: 18px;" data-aos="fade-up">' + value[1] + '</h2> ' +
-                            '<figure class="mb-5" data-aos="fade-up" style="text-align: center;">' +
-                            ' <iframe width="900" height="619"  src="' + value[0] + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' +
-                            '</figure>' +
+                          console.log(value["link_video"]);
+                          console.log(value["title"]["en"]);
+                          console.log(value["title"]["pt"]);
 
-                            '<p><br><br></p>' +
-                            '</div>';
-                        
-                    });
-                    $(".contentdiv").html(htmltobeinserted);
+                      });
                 });
             
             }
