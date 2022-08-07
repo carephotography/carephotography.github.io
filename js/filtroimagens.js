@@ -67,11 +67,11 @@ function filteronmainpage(filtro, lang){
         
 	}
 	else {
-        var aaaaaaaaa = document.getElementsByClassName("istanbul")[0].firstElementChild;
+        /*var aaaaaaaaa = document.getElementsByClassName("istanbul")[0].firstElementChild;
         document.getElementsByClassName("istanbul")[0].firstElementChild.attr('fancybox', "aaaaaa");
         var bbbbbbbb = document.getElementsByClassName("istanbul")[0].firstElementChild;
+        alert(document.getElementsByName("istanbul"));*/
         
-        alert(document.getElementsByName("istanbul"));
 		var filtroselecionado = document.querySelectorAll("." + filtro);
 
 		for (let k=0; k < all_items; k++){
