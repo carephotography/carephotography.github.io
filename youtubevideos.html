@@ -104,7 +104,13 @@
                               </li>
                           </ul>
                       </li>
-                      <li class="active"><a href="video.html">Videos</a></li>
+                      <li class="dropdown">
+                        <a href="" class="dropdown-toggle" style="color:#ef6c57;" data-toggle="dropdown">Videos</a>
+                        <ul class="dropdown-menu listaitems multi-level" role="listbox">
+                            <li><a href="youtubevideos.html" role="option" class="itemlistadropdown">YouTube Videos</a></li>
+                            <li><a href="reelsvideos.html" role="option" class="itemlistadropdown">Reels (Instagram) Videos</a></li>
+                        </ul>
+                    </li>
                       <li><a href="bio.html">Biography</a></li>
                       <li><a href="work.html">Photography Jobs</a></li>
                       <li><a href="contactme.html">Contact Me</a></li>
@@ -180,7 +186,7 @@
       <script>
           $(document).ready(
               function () {
-                  $.getJSON("https://raw.githubusercontent.com/carephotography/carephotography.github.io/main/jsondata_citiescountries/data_video.json", function (data) {
+                  $.getJSON("https://raw.githubusercontent.com/carephotography/carephotography.github.io/main/jsondata_citiescountries/data_youtubevideo.json", function (data) {
                       var htmltobeinserted = '';
                       $.each(data, function (key, value) {
                           htmltobeinserted = '<div class="col-md-12"> ' +
