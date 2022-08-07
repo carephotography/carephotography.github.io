@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Caré Photography</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:title" content="Caré Photography" />
+    <meta property="og:description" content="This is my portfolio webpage. Enjoy." />
+    <meta property="og:image" content="https://raw.githubusercontent.com/carephotography/carephotography.github.io/main/images/IMG_4301.JPG" />
+    <meta
+       name="viewport"
+       content="width=device-width, initial-scale=1, shrink-to-fit=no"
+       />
+       <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+      <link rel="manifest" href="images/site.webmanifest">
+      <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-config" content="images/browserconfig.xml">
+      <meta name="theme-color" content="#ffffff">
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/fancybox.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="d3/d3.v3.min.js"></script>
+    <script src="d3/topojson.v1.min.js"></script>
+    <script src="datamaps/datamaps.world.min.js"></script>
+
+    <style>
+      body {font-family: Arial;}
+      
+      /* Style the tab */
+      .tab {
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+      }
+      
+      /* Style the buttons inside the tab */
+      .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+      }
+      
+      /* Change background color of buttons on hover */
+      .tab button:hover {
+        background-color: #ddd;
+      }
+      
+      /* Create an active/current tablink class */
+      .tab button.active {
+        background-color: #ccc;
+      }
+      
+      /* Style the tab content */
+      .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        -webkit-animation: fadeEffect 1s;
+        animation: fadeEffect 1s;
+      }
+      
+      /* Fade in tabs */
+      @-webkit-keyframes fadeEffect {
+        from {opacity: 0;}
+        to {opacity: 1;}
+      }
+      
+      @keyframes fadeEffect {
+        from {opacity: 0;}
+        to {opacity: 1;}
+      }
+
+      #container {
+  margin-bottom: 5px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.zoom-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  border: none;
+  background: silver;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+}
+
+#zoom-info {
+  display: inline-block;
+  padding: 10px;
+}
+      </style>
+    
+  </head>
+  <body>
+  
+
+  <div class="site-wrap">
+
+  <div class="site-mobile-menu">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close mt-3">
+        <span class="icon-close2 js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
+  <header class="header-bar d-flex d-lg-block align-items-center" data-aos="fade-left">
+    <div class="site-logo">
+      <a href="index.html"><img src="images/logowhite.png" alt="Logo" width="150px"></a>
+    </div>
+    
+    <div class="d-inline-block d-xl-none ml-md-0 ml-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+
+    <div class="main-menu">
+      <ul class="js-clone-nav">
+        <li><a href="index.html?lang=en">Main Page</a></li>
+        <li class="dropdown">
+			<a href="" class="dropdown-toggle" data-toggle="dropdown" >General Portfolio</a>
+			<ul class="dropdown-menu listaitems multi-level" role="listbox">
+			   <li><a href="index.html?sq=praiasportuguesas&lang=en" role="option" class="itemlistadropdown">Portuguese Beaches</a></li>
+			   <li><a href="index.html?sq=photosessions&lang=en" role="option" class="itemlistadropdown">Photography Sessions</a></li>
+			   <li><a href="index.html?sq=gopro&lang=en" role="option" class="itemlistadropdown">Gopro Photography</a></li>
+			   <li><a href="index.html?sq=drone&lang=en" role="option" class="itemlistadropdown">Drone Photography</a></li>
+			   <li><a href="index.html?sq=underwater&lang=en" role="option" class="itemlistadropdown">Underwater Photography</a></li>
+			   <li><a href="index.html?sq=car&lang=en" role="option" class="itemlistadropdown">Car Photography</a></li>
+			   <li><a href="index.html?sq=sports&lang=en" role="option" class="itemlistadropdown">Sports Photography</a></li>
+			</ul>
+		</li>
+        <li class="dropdown">
+			<a href="" class="dropdown-toggle" data-toggle="dropdown" >Travel Portfolio</a>
+			<ul class="dropdown-menu listaitems multi-level" role="listbox">
+			   <li class="dropdown-subsubmenu">
+							<a href="#" class="itemlistadropdown">Portugal</a>
+							<ul class="dropdown-menu">
+								<li><a href="index.html?sq=portugal&lang=en" class="itemlistadropdown">All</a></li>
+								<li><a href="index.html?sq=lisbon&lang=en" class="itemlistadropdown">Lisbon</a></li>
+								<li><a href="index.html?sq=lourinha&lang=en" class="itemlistadropdown">Lourinhã</a></li>
+								<li><a href="index.html?sq=nazare&lang=en" class="itemlistadropdown">Nazaré</a></li>
+                <li><a href="index.html?sq=others&lang=en" class="itemlistadropdown">Others</a></li>
+							</ul>
+						 </li>
+             <li class="dropdown-subsubmenu">
+              <a href="#" class="itemlistadropdown">United Kingdom</a>
+              <ul class="dropdown-menu">
+                <li><a href="index.html?sq=uk&lang=en" class="itemlistadropdown">All</a></li>
+                 <li><a href="index.html?sq=sctoland&lang=en" class="itemlistadropdown">Scotland</a></li>
+              </ul>
+           </li>
+           <li class="dropdown-subsubmenu">
+              <a href="#" class="itemlistadropdown">Morocco</a>
+              <ul class="dropdown-menu">
+                 <li><a href="index.html?sq=morroco&lang=en" class="itemlistadropdown">All</a></li>
+                 <li><a href="index.html?sq=marrakesh&lang=en" class="itemlistadropdown">Marrakesh</a></li>
+              </ul>
+           </li>
+			</ul>
+		</li>
+      <li><a href="video.html">Videos</a></li>
+        <li><a href="bio.html">Biography</a></li>
+        <li><a href="work.html">Photography Jobs</a></li>
+        <li class="active"><a href="contactme.html">Contact Me</a></li>
+		<li><a href="buymeacoffee.html">Buy me a coffee</a></li>
+      </ul>
+      <ul class="social js-clone-nav">
+        <li><a href="pt/index.html"><img src="images/pt.svg" alt="PT" width="20px"></a></li>
+        <li><a href="index.html"><img src="images/gb.svg" alt="GB" width="20px"></a></li>
+      </ul>
+      <ul class="social js-clone-nav">
+        <li>
+          <a href="https://www.instagram.com/souocare/"><span class="icon-instagram"></span></a>
+       </li>
+       <li>
+          <a href="https://linktr.ee/souocare"><span class="icon-link"></span></a>
+       </li>
+       <li>
+          <a href="https://www.youtube.com/c/gcfonseca1999/videos"><span class="icon-youtube"></span></a>
+       </li>
+       <li>
+          <a href="https://www.facebook.com/ocarephotography"><span class="icon-facebook"></span></a>
+       </li>
+      </ul>
+    </div>
+  </header> 
+  <main class="main-content">
+    <div class="container-fluid photos">
+      <div class="col-md-11 pt-4" style="padding-left: 30px; padding-top: 40px; margin-right: 10px;">
+
+        <h2 class="text-white mb-4" data-aos="fade-up" style="text-align: center;">Places I visited</h2>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-md-12">
+            <p>The map represents the places I visited. You can hover on the map to check the names of the spots. Wanna check in a table? Scroll down then!
+              <br>
+            </p>
+            <p>Legend:</p>
+            <ul>
+              <li>Dark Grey Areas: Countries I visited</li>
+                <li>Red Points: cities I visited (you need to zoom in a certain country to check the points)</li>
+          </ul>
+            <div id="container" style="position: relative; width: 800px; height: 540px;"></div>
+            <button class="zoom-button" data-zoom="reset">0</button>
+            <button class="zoom-button" data-zoom="out">-</button>
+            <button class="zoom-button" data-zoom="in">+</button>
+            <div id="zoom-info"></div>
+          </div>
+        </div>
+
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-md-12">
+            <br><br>
+            <p>Click in one of the Continents below to check the countries I visited.</p>
+
+            <div id="continenteselect">
+              <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link" onclick="opencountries('europecountries')" href="#">Europe</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" onclick="opencountries('asiacountries')" href="#">Asia</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" onclick="opencountries('northamericacountries')" href="#">North America</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" onclick="opencountries('southamericacountries')" href="#">South America</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" onclick="opencountries('africaamericacountries')" href="#">Africa</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" onclick="opencountries('oceaniaamericacountries')" href="#">Oceania</a>
+                </li>
+              </ul>
+            </div>
+
+            <br><br>
+            <p>Click in one of the countries below to check the cities I visited.</p>
+            <div id="countriesselect">
+              <div id="europecountries" style="display: none;">
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link" onclick="openCity(event, 'Portugal')">Portugal</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" onclick="openCity(event, 'Spain')">Spain</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div id="asiacountries" style="display: none;">
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Asia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                </ul>
+              </div>
+              
+              <div id="northamericacountries" style="display: none;">
+                <p style="color:white; font-size: 17px;">I still haven't visited any country of this continent (yet!). Check my socials to check if I'm visiting another country!</p>
+              </div>
+            </div>
+
+            
+
+            <br><br>
+            
+            <div id="Portugal" class="tabcontent">
+              <p>Wanna check some photos? If the name is orange (country or city), I have some pictures that you can see! Try it!</p>
+              <h3>Portugal</h3>
+              <ul>
+                <li>Lisbon</li>
+                <li>Porto</li>
+                <li>Aveiro</li>
+                <li>Braga</li>
+                <li>Madeira<ul>
+                  <li>Madeira Island</li>
+                  <li>Porto Santo</li>
+                  </ul>
+                </li>
+                <li>Azores<ul>
+                  <li>São Miguel</li>
+                  <li>Terceira</li>
+                  <li>Pico</li>
+                  </ul>
+                </li>
+            </ul>
+            </div>
+
+            
+            <div id="Spain" class="tabcontent">
+              <p>Wanna check some photos? If the name is orange (country or city), I have some pictures that you can see! Try it!</p>
+              <h3>Spain</h3>
+              <ul>
+                <li>Madrid</li>
+                <li>Barcelona</li>
+                <li>Ayamonte</li>
+            </ul>
+            </div>
+            
+          </div>
+        </div>
+
+        
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-12 text-center py-5">
+          <p>
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Caré Photography<br><span style="font-size:10px">This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>.</span>
+
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+      </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</div> <!-- .site-wrap -->
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/aos.js"></script>
+
+  <script src="js/jquery.fancybox.min.js"></script>
+
+  <script src="js/main.js"></script>
+
+  <script src="jsondata_citiescountries/countries.js"></script>
+    <script src="jsondata_citiescountries/cities.js"></script>
+
+    <script>
+
+function Zoom(args) {
+  $.extend(this, {
+    $buttons:   $(".zoom-button"),
+    $info:      $("#zoom-info"),
+    scale:      { max: 50, currentShift: 0 },
+    $container: args.$container,
+    datamap:    args.datamap
+  });
+
+  this.init();
+}
+
+Zoom.prototype.init = function() {
+  var paths = this.datamap.svg.selectAll("path"),
+      subunits = this.datamap.svg.selectAll(".datamaps-subunit");
+
+  // preserve stroke thickness
+  paths.style("vector-effect", "non-scaling-stroke");
+
+  // disable click on drag end
+  subunits.call(
+    d3.behavior.drag().on("dragend", function() {
+      d3.event.sourceEvent.stopPropagation();
+    })
+  );
+
+  this.scale.set = this._getScalesArray();
+  this.d3Zoom = d3.behavior.zoom().scaleExtent([ 1, this.scale.max ]);
+
+  this._displayPercentage(1);
+  this.listen();
+};
+
+Zoom.prototype.listen = function() {
+  this.$buttons.off("click").on("click", this._handleClick.bind(this));
+
+  this.datamap.svg
+    .call(this.d3Zoom.on("zoom", this._handleScroll.bind(this)))
+    .on("dblclick.zoom", null); // disable zoom on double-click
+};
+
+Zoom.prototype.reset = function() {
+  this._shift("reset");
+};
+
+Zoom.prototype._handleScroll = function() {
+  var translate = d3.event.translate,
+      scale = d3.event.scale,
+      limited = this._bound(translate, scale);
+
+  this.scrolled = true;
+
+  this._update(limited.translate, limited.scale);
+};
+
+Zoom.prototype._handleClick = function(event) {
+  var direction = $(event.target).data("zoom");
+
+  this._shift(direction);
+};
+
+Zoom.prototype._shift = function(direction) {
+  var center = [ this.$container.width() / 2, this.$container.height() / 2 ],
+      translate = this.d3Zoom.translate(), translate0 = [], l = [],
+      view = {
+        x: translate[0],
+        y: translate[1],
+        k: this.d3Zoom.scale()
+      }, bounded;
+
+  translate0 = [
+    (center[0] - view.x) / view.k,
+    (center[1] - view.y) / view.k
+  ];
+
+	if (direction == "reset") {
+  	view.k = 1;
+    this.scrolled = true;
+  } else {
+  	view.k = this._getNextScale(direction);
+  }
+
+l = [ translate0[0] * view.k + view.x, translate0[1] * view.k + view.y ];
+
+  view.x += center[0] - l[0];
+  view.y += center[1] - l[1];
+
+  bounded = this._bound([ view.x, view.y ], view.k);
+
+  this._animate(bounded.translate, bounded.scale);
+};
+
+Zoom.prototype._bound = function(translate, scale) {
+  var width = this.$container.width(),
+      height = this.$container.height();
+
+  translate[0] = Math.min(
+    (width / height)  * (scale - 1),
+    Math.max( width * (1 - scale), translate[0] )
+  );
+
+  translate[1] = Math.min(0, Math.max(height * (1 - scale), translate[1]));
+
+  return { translate: translate, scale: scale };
+};
+
+Zoom.prototype._update = function(translate, scale) {
+  this.d3Zoom
+    .translate(translate)
+    .scale(scale);
+
+  this.datamap.svg.selectAll("g")
+    .attr("transform", "translate(" + translate + ")scale(" + scale + ")");
+
+  this._displayPercentage(scale);
+};
+
+Zoom.prototype._animate = function(translate, scale) {
+  var _this = this,
+      d3Zoom = this.d3Zoom;
+
+  d3.transition().duration(350).tween("zoom", function() {
+    var iTranslate = d3.interpolate(d3Zoom.translate(), translate),
+        iScale = d3.interpolate(d3Zoom.scale(), scale);
+
+		return function(t) {
+      _this._update(iTranslate(t), iScale(t));
+    };
+  });
+};
+
+Zoom.prototype._displayPercentage = function(scale) {
+  var value;
+
+  value = Math.round(Math.log(scale) / Math.log(this.scale.max) * 100);
+  this.$info.text(value + "%");
+};
+
+Zoom.prototype._getScalesArray = function() {
+  var array = [],
+      scaleMaxLog = Math.log(this.scale.max);
+
+  for (var i = 0; i <= 10; i++) {
+    array.push(Math.pow(Math.E, 0.1 * i * scaleMaxLog));
+  }
+
+  return array;
+};
+
+Zoom.prototype._getNextScale = function(direction) {
+  var scaleSet = this.scale.set,
+      currentScale = this.d3Zoom.scale(),
+      lastShift = scaleSet.length - 1,
+      shift, temp = [];
+
+  if (this.scrolled) {
+
+    for (shift = 0; shift <= lastShift; shift++) {
+      temp.push(Math.abs(scaleSet[shift] - currentScale));
+    }
+
+    shift = temp.indexOf(Math.min.apply(null, temp));
+
+    if (currentScale >= scaleSet[shift] && shift < lastShift) {
+      shift++;
+    }
+
+    if (direction == "out" && shift > 0) {
+      shift--;
+    }
+
+    this.scrolled = false;
+
+  } else {
+
+    shift = this.scale.currentShift;
+
+    if (direction == "out") {
+      shift > 0 && shift--;
+    } else {
+      shift < lastShift && shift++;
+    }
+  }
+
+  this.scale.currentShift = shift;
+
+  return scaleSet[shift];
+};
+
+function Datamap() {
+	this.$container = $("#container");
+	this.instance = new Datamaps({
+    scope: 'world',
+    element: this.$container.get(0),
+    projection: 'mercator',
+        fills: {
+            defaultFill: '#D0D0D0',
+            visited: '#828181',
+            city: '#FC8050'
+        },
+        geographyConfig: {
+            highlightOnHover: true,
+            highlightFillColor: '#A0C0A0',
+            highlightBorderColor: '#F0F0F0',
+            popupOnHover: true,
+            popupTemplate: function(geography, data) {
+                return '<div class="hoverinfo"><b>Country: ' + geography.properties.name + '</b></div>';
+            },
+        },
+        bubblesConfig: {
+            borderWidth: 1,
+            borderColor: '#FFFFFF',
+            highlightOnHover: true,
+            popupOnHover: true,
+            popupTemplate: function(geo, data) {
+                return "<div class='hoverinfo'>City: " + data.namecity + "<br>Country: " + data.namecountry + "<br>Datas I visited: " + data.date + "</div>";
+            }
+        },
+        data: COUNTRIES,
+        bubbles: CITIES,
+    done: this._handleMapReady.bind(this)
+	});
+
+  this.instance.bubbles(CITIES);
+
+
+}
+
+Datamap.prototype._handleMapReady = function(datamap) {
+	this.zoom = new Zoom({
+  	$container: this.$container,
+  	datamap: datamap
+  });
+}
+
+new Datamap();
+
+
+    </script>
+
+
+
+<script>
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  </script>
+
+    
+  <script>
+    $(document).ready(function () {
+      $("#map1").css("padding-bottom", "66.75%");
+    $('#continenteselect .nav li a').click(function(e) {
+
+        $('#continenteselect .nav a.active').removeClass('active');
+        $(this).addClass('active');
+        e.preventDefault();
+    });
+
+
+    $('#countriesselect .nav li a').click(function(e) {
+
+      $('#countriesselect .nav a.active').removeClass('active');
+      $(this).addClass('active');
+      e.preventDefault();
+      });
+    });
+  </script>
+
+<script>
+  function opencountries(countryiddiv) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementById("countriesselect");
+    var sons = tabcontent.children;
+    for (i = 0; i < sons.length; i++) {
+      sons[i].style.display = "none";
+    }
+
+    tabtoshow = document.getElementById(countryiddiv).style.display = "block";
+  }
+  </script>
+
+  <script>
+    
+  </script>
+
+  
+
+
+
+  </body>
+</html>
