@@ -16,6 +16,34 @@
           "1": ["All", "Todos", "italy"],
           "2": ["Lake Como", "Lago Como", "lakecomo"]
         }
-      }
+      },
+    "3":{
+        "country": ["Morocco", "Marrocos"],
+        "cities":{
+        "1": ["All", "Todos", "morroco"],
+        "2": ["Marrakesh", "Marrakesh", "marrakesh"]
+        }
+    },
+    "4":{
+        "country": ["Turkey", "Turquia"],
+        "cities":{
+        "1": ["All", "Todos", "turkey"],
+        "2": ["Istanbul", "Istanbul", "istanbul"]
+        }
+    },
+    "5":{
+        "country": ["United Kingdom", "Reino Unido"],
+        "cities":{
+        "1": ["All", "Todos", "uk"],
+        "2": ["Edinburgh - Scotland", "Edinburgh - Escócia", "edinburgh_scotland"]
+        }
+    },
+    "6":{
+        "country": ["Norway", "Noruega"],
+        "cities":{
+        "1": ["All", "Todos", "norway"],
+        "2": ["Oslo", "Oslo", "oslo"]
+        }
+    }
     
   }
