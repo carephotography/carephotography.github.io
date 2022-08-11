@@ -1,0 +1,21 @@
+{
+    "1":{
+      "country": ["Portugal", "Portugal"],
+      "cities":{
+        "1": ["All", "Todos", "portugal"],
+        "2": ["Lisbon", "Lisboa", "lisbon"],
+        "3": ["Lourinhã", "Lourinhã", "lourinha"],
+        "4": ["Nazaré", "Nazaré", "nazare"],
+        "5": ["Madeira Island, Madeira", "Ilha da Madeira, Madeira", "madeira"],
+        "6": ["Others", "Outros", "otherspt"]
+      }
+    },
+    "2":{
+        "country": ["Italy", "Italia"],
+        "cities":{
+          "1": ["All", "Todos", "italy"],
+          "2": ["Lake Como", "Lago Como", "lakecomo"]
+        }
+      }
+    
+  }

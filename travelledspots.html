@@ -273,30 +273,39 @@
                   <li class="nav-item">
                     <a class="nav-link" onclick="openCity(event, 'Spain')">Spain</a>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link" onclick="openCity(event, 'Greece')">Spain</a>
+                  </li>
                 </ul>
               </div>
 
               <div id="asiacountries" style="display: none;">
-                <ul class="nav nav-tabs">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Asia</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                </ul>
+                <p style="color:white; font-size: 17px;">I still haven't visited any country of this continent (yet!). Check my socials to check if I'm visiting another country!</p>
               </div>
-              
               <div id="northamericacountries" style="display: none;">
                 <p style="color:white; font-size: 17px;">I still haven't visited any country of this continent (yet!). Check my socials to check if I'm visiting another country!</p>
               </div>
+              <div id="southamericacountries" style="display: none;">
+                <p style="color:white; font-size: 17px;">I still haven't visited any country of this continent (yet!). Check my socials to check if I'm visiting another country!</p>
+              </div>
+              <div id="oceaniaamericacountries" style="display: none;">
+                <p style="color:white; font-size: 17px;">I still haven't visited any country of this continent (yet!). Check my socials to check if I'm visiting another country!</p>
+              </div>
+              <div id="africaamericacountries" style="display: none;">
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a class="nav-link" onclick="openCity(event, 'Morocco')">Morocco</a>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
 
             
 
-            <br><br>
             
             <div id="Portugal" class="tabcontent">
+              <br><br>
               <p>Wanna check some photos? If the name is orange (country or city), I have some pictures that you can see! Try it!</p>
               <h3>Portugal</h3>
               <ul>
@@ -320,6 +329,7 @@
 
             
             <div id="Spain" class="tabcontent">
+              <br><br>
               <p>Wanna check some photos? If the name is orange (country or city), I have some pictures that you can see! Try it!</p>
               <h3>Spain</h3>
               <ul>
@@ -328,8 +338,40 @@
                 <li>Ayamonte</li>
             </ul>
             </div>
+
+            <div id="Greece" class="tabcontent">
+              <br><br>
+              <p>Wanna check some photos? If the name is orange (country or city), I have some pictures that you can see! Try it!</p>
+              <h3>Greece</h3>
+              <ul>
+                <li>Athens</li>
+                <li>Crete (Island)</li>
+                <li>Kefalonia (Island)</li>
+                <li>Meteora</li>
+                <li>Naxos (Island)</li>
+                <li>Paros (Island)</li>
+                <li>Santorini (Island)</li>
+                <li>Zakynthos (Island)</li>
+            </ul>
+            </div>
+
+
+
+
+
+
+
+
+            <div id="Morocco" class="tabcontent">
+              <br><br>
+              <p>Wanna check some photos? If the name is orange (country or city), I have some pictures that you can see! Try it!</p>
+              <h3>Morocco</h3>
+              <ul>
+                <li>Marrakech</li>
+            </ul>
+            </div>
+
             
-          </div>
         </div>
 
         
@@ -652,6 +694,11 @@ new Datamap();
 
 <script>
   function opencountries(countryiddiv) {
+    var icities, tabcontentcities;
+    tabcontentcities = document.getElementsByClassName("tabcontent");
+    for (icities = 0; i < tabcontentcities.length; icities++) {
+      tabcontentcities[icities].style.display = "none";
+    }
     var i, tabcontent, tablinks;
     tabcontent = document.getElementById("countriesselect");
     var sons = tabcontent.children;

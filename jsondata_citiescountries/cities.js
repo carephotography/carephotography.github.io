@@ -41,4 +41,13 @@ CITIES =
    {namecity: 'Nürnberg', namecountry: 'Germany', latitude: 49.44992814583952, longitude: 11.072978636993161, radius: 1, fillKey: 'city', date: ''},
    {namecity: 'Rothenburg ob der Tauber', namecountry: 'Germany', latitude: 49.37920623738108, longitude: 10.182419810714899, radius: 1, fillKey: 'city', date: ''},
    {namecity: 'Würzburg', namecountry: 'Germany ', latitude: 49.78470256121875, longitude: 9.929293697602192, radius: 1, fillKey: 'city', date: ''},
+
+   {namecity: 'Athens', namecountry: 'Greece', latitude: 37.98974969701584, longitude: 23.73353227140236, radius: 1, fillKey: 'city', date: ''},
+   {namecity: 'Crete', namecountry: 'Greece', latitude: 35.22965832640014, longitude: 24.801612131075526, radius: 1, fillKey: 'city', date: ''},
+   {namecity: 'Kefalonia', namecountry: 'Greece', latitude: 38.19240672055063, longitude: 20.562637560505173, radius: 1, fillKey: 'city', date: ''},
+   {namecity: 'Meteora', namecountry: 'Greece', latitude: 39.72187767469597, longitude: 21.63049303829493, radius: 1, fillKey: 'city', date: ''},
+   {namecity: 'Naxos', namecountry: 'Greece ', latitude: 37.100426051851755, longitude: 25.400297196712135, radius: 1, fillKey: 'city', date: ''},
+   {namecity: 'Paros', namecountry: 'Greece', latitude: 37.08809019305238, longitude: 25.147294540336944, radius: 1, fillKey: 'city', date: ''},
+   {namecity: 'Santorini', namecountry: 'Greece', latitude: 36.42741298775568, longitude: 25.432365465122423, radius: 1, fillKey: 'city', date: ''},
+   {namecity: 'Zakynthos', namecountry: 'Greece ', latitude: 37.78223463971623, longitude: 20.87892386467863, radius: 1, fillKey: 'city', date: ''},
 ]
