@@ -780,7 +780,7 @@
 
                   <!-- Linha  -->
 		
-            <div class="col-6 col-md-6 col-lg-2 imagemitem uk scotland" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-6 col-md-6 col-lg-2 imagemitem uk edinburgh_scotland" data-aos="fade-up" data-aos-delay="100">
                <a href="https://lh3.googleusercontent.com/d/1sEFHVyXG3g87tKMI0qUXEkizpPWgZj6w" class="d-block photo-item" data-fancybox="gallery"  data-caption="<strong>Location: </strong> Loc &nbsp;&nbsp;||&nbsp;&nbsp;<strong>Gear: </strong> Equip <br>WriteSomething">
                <img src="https://lh3.googleusercontent.com/d/1sEFHVyXG3g87tKMI0qUXEkizpPWgZj6w" alt="Image" class="img-fluid">
                <div class="photo-text-more">
@@ -788,7 +788,7 @@
                </div>
                </a>
             </div>
-            <div class="col-6 col-md-6 col-lg-2 imagemitem uk scotland" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-6 col-md-6 col-lg-2 imagemitem uk edinburgh_scotland" data-aos="fade-up" data-aos-delay="100">
                <a href="https://lh3.googleusercontent.com/d/1XJVVD7uEOgRyJRZNVM_2gHVbAXbwalqP" class="d-block photo-item" data-fancybox="gallery"  data-caption="<strong>Location: </strong> Loc &nbsp;&nbsp;||&nbsp;&nbsp;<strong>Gear: </strong> Equip <br>WriteSomething">
                <img src="https://lh3.googleusercontent.com/d/1XJVVD7uEOgRyJRZNVM_2gHVbAXbwalqP" alt="Image" class="img-fluid">
                <div class="photo-text-more">
@@ -796,7 +796,7 @@
                </div>
                </a>
             </div>
-            <div class="col-6 col-md-6 col-lg-4 imagemitem uk scotland" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-6 col-md-6 col-lg-4 imagemitem uk edinburgh_scotland" data-aos="fade-up" data-aos-delay="100">
                <a href="https://lh3.googleusercontent.com/d/1MXo9TXmzIefRssjzgk9J7qhNK-zmajss" class="d-block photo-item" data-fancybox="gallery"  data-caption="<strong>Location: </strong> Loc &nbsp;&nbsp;||&nbsp;&nbsp;<strong>Gear: </strong> Equip <br>WriteSomething">
                <img src="https://lh3.googleusercontent.com/d/1MXo9TXmzIefRssjzgk9J7qhNK-zmajss" alt="Image" class="img-fluid">
                <div class="photo-text-more">
@@ -804,7 +804,7 @@
                </div>
                </a>
             </div>
-            <div class="col-6 col-md-6 col-lg-2 imagemitem uk scotland" data-aos="fade-up">
+            <div class="col-6 col-md-6 col-lg-2 imagemitem uk edinburgh_scotland" data-aos="fade-up">
                <a href="https://lh3.googleusercontent.com/d/1-4Va1gzhAgcBa0hZsO8C6BaaqkCpRGGM" class="d-block photo-item" data-fancybox="gallery"  data-caption="<strong>Localização: </strong> Loc &nbsp;&nbsp;||&nbsp;&nbsp;<strong>Equipamento: </strong> Equip <br>WriteSomething">  >
                <img src="https://lh3.googleusercontent.com/d/1-4Va1gzhAgcBa0hZsO8C6BaaqkCpRGGM" alt="Image" class="img-fluid">
                <div class="photo-text-more">
@@ -812,7 +812,7 @@
                </div>
                </a>
             </div>
-            <div class="col-6 col-md-6 col-lg-2 imagemitem uk scotland" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-6 col-md-6 col-lg-2 imagemitem uk edinburgh_scotland" data-aos="fade-up" data-aos-delay="100">
                <a href="https://lh3.googleusercontent.com/d/1zDqSK9yECtBiJPbmZWfkHuue5JzZUG9o" class="d-block photo-item" data-fancybox="gallery"  data-caption="<strong>Location: </strong> Loc &nbsp;&nbsp;||&nbsp;&nbsp;<strong>Gear: </strong> Equip <br>WriteSomething">
                <img src="https://lh3.googleusercontent.com/d/1zDqSK9yECtBiJPbmZWfkHuue5JzZUG9o" alt="Image" class="img-fluid">
                <div class="photo-text-more">
@@ -1325,9 +1325,27 @@
                     $(".contentullicountriestravel").html(htmltobeinserted);
                 });
 
+
+              $.getJSON("https://raw.githubusercontent.com/carephotography/carephotography.github.io/main/jsondata_citiescountries/data_countriescitiesopenindex.json", function (data) {
+                  var htmltobeinserted = '';
+                  $.each(data, function (key, value) {
+                    var htmllistcities = '';
+                    for (const [key2, value2] of Object.entries(value["cities"])) {
+                      htmllistcities = htmllistcities + '<li><a href="#" class="itemlistadropdown" onclick="filteronmainpage(\'' + value2[2] + '\', \'en\')">' + value2[0] + '</a></li>';
+                    }
+
+                      htmltobeinserted = htmltobeinserted +  '<li class="dropdown-subsubmenu"> ' +
+                          ' <a href="#" class="itemlistadropdown">' + value["country"][0] + '</a>' +
+                          ' <ul class="dropdown-menu">' + htmllistcities + '</ul> </li>' ;;
+
+                          
+
+                  });
+                  $(".contentullicountriestravel").html(htmltobeinserted);
+              });
+
             }
         );
     </script>
-
    </body>
 </html>
