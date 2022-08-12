@@ -1,5 +1,4 @@
-var all_items = document.querySelectorAll(".imagemitem").length;
-var items = document.querySelectorAll(".imagemitem");
+
 
 var textosdict = {
     "all":{
@@ -52,10 +51,18 @@ var textosdict = {
     }, 
     "marrakesh":{
         "pt":"'Marraquexe'", "en":"'Marrakesh'"
+    } ,
+    "norway":{
+        "pt":"'Noruega'", "en":"'Norway'"
+    }, 
+    "oslo":{
+        "pt":"'Oslo'", "en":"'Oslo'"
     }
 }
 
 function filteronmainpage(filtro, lang){
+    var all_items = document.querySelectorAll(".imagemitem").length;
+var items = document.querySelectorAll(".imagemitem");
 	
 	if (filtro == "all"){
 		for (let k=0; k < all_items; k++){
@@ -91,6 +98,48 @@ function filteronmainpage(filtro, lang){
 
 
 $( document ).ready(function() {
+    $.getJSON("https://raw.githubusercontent.com/carephotography/carephotography.github.io/main/jsondata_citiescountries/data_countriescitiesopenindex.json", function (data) {
+                    var htmltobeinserted = '';
+                    $.each(data, function (key, value) {
+                      var htmllistcities = '';
+                      for (const [key2, value2] of Object.entries(value["cities"])) {
+                        htmllistcities = htmllistcities + '<li><a href="#" class="itemlistadropdown" onclick="filteronmainpage(\'' + value2[2] + '\', \'en\')">' + value2[0] + '</a></li>';
+                      }
+
+                        htmltobeinserted = htmltobeinserted +  '<li class="dropdown-subsubmenu"> ' +
+                           ' <a href="#" class="itemlistadropdown">' + value["country"][0] + '</a>' +
+                           ' <ul class="dropdown-menu">' + htmllistcities + '</ul> </li>' ;
+
+                            
+
+                    });
+                    $(".contentullicountriestravel").html(htmltobeinserted);
+                });
+
+
+                $.getJSON("https://raw.githubusercontent.com/carephotography/carephotography.github.io/main/jsondata_citiescountries/data_photos.json", function (dataphotos) {
+                    var htmltobeinsertedphotos = '';
+                    $.each(dataphotos, function (keyphotos, valuephotos) {
+                      var htmllistcities = '';
+                      var classesfinal = valuephotos["classes"].join(' ');
+
+                      htmltobeinsertedphotos = '<div class="col-6 col-md-6 col-lg-' + valuephotos["col_lg"] + ' ' + classesfinal + ' imagemitem" data-aos="fade-up" data-aos-delay="100"> ' +
+                            ' <a href="https://lh3.googleusercontent.com/d/' + valuephotos["link_photo"] + '"  class="d-block photo-item" data-fancybox="gallery"  data-caption="<strong>Location: ' + valuephotos["location"]["en"] + '</strong> &nbsp;&nbsp;||&nbsp;&nbsp;<strong>Gear: ' + valuephotos["Gear"]["en"] + '</strong> <br>' + valuephotos["Story"]["en"] + '"> ' +
+                            ' <img src="https://lh3.googleusercontent.com/d/' + valuephotos["link_photo"] + '" alt="Image" class="img-fluid"> ' + 
+                            ' <div class="photo-text-more"> ' +  
+                            ' <span class="icon icon-search"></span>' +  
+                            ' </div> ' +  
+                            ' </a> ' +  
+                            ' </div>' + htmltobeinsertedphotos ;
+
+                            
+
+                    });
+                    $(".contentphotos").html(htmltobeinsertedphotos);
+
+                    
+                });
+    
     const params = new URLSearchParams(location.search);
     const query = params.get("sq");
     const lang = params.get("lang");

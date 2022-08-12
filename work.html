@@ -78,31 +78,7 @@
 		</li>
         <li class="dropdown">
 			<a href="" class="dropdown-toggle" data-toggle="dropdown" >Travel Portfolio</a>
-			<ul class="dropdown-menu listaitems multi-level" role="listbox">
-			   <li class="dropdown-subsubmenu">
-							<a href="#" class="itemlistadropdown">Portugal</a>
-							<ul class="dropdown-menu">
-								<li><a href="index.html?sq=portugal&lang=en" class="itemlistadropdown">All</a></li>
-								<li><a href="index.html?sq=lisbon&lang=en" class="itemlistadropdown">Lisbon</a></li>
-								<li><a href="index.html?sq=lourinha&lang=en" class="itemlistadropdown">Lourinhã</a></li>
-								<li><a href="index.html?sq=nazare&lang=en" class="itemlistadropdown">Nazaré</a></li>
-                <li><a href="index.html?sq=others&lang=en" class="itemlistadropdown">Others</a></li>
-							</ul>
-						 </li>
-             <li class="dropdown-subsubmenu">
-              <a href="#" class="itemlistadropdown">United Kingdom</a>
-              <ul class="dropdown-menu">
-                <li><a href="index.html?sq=uk&lang=en" class="itemlistadropdown">All</a></li>
-                 <li><a href="index.html?sq=sctoland&lang=en" class="itemlistadropdown">Scotland</a></li>
-              </ul>
-           </li>
-           <li class="dropdown-subsubmenu">
-              <a href="#" class="itemlistadropdown">Morocco</a>
-              <ul class="dropdown-menu">
-                 <li><a href="index.html?sq=morroco&lang=en" class="itemlistadropdown">All</a></li>
-                 <li><a href="index.html?sq=marrakesh&lang=en" class="itemlistadropdown">Marrakesh</a></li>
-              </ul>
-           </li>
+			<ul class="dropdown-menu listaitems multi-level contentullicountriestravel" role="listbox">
 			</ul>
 		</li>
     <li><a href="video.html">Videos</a></li>
@@ -176,6 +152,31 @@
   <script src="js/jquery.fancybox.min.js"></script>
 
   <script src="js/main.js"></script>
+
+  <script>
+    $(document).ready(
+        function () {
+            $.getJSON("https://raw.githubusercontent.com/carephotography/carephotography.github.io/main/jsondata_citiescountries/data_countriescitiesopenindex.json", function (data) {
+                var htmltobeinserted = '';
+                $.each(data, function (key, value) {
+                  var htmllistcities = '';
+                  for (const [key2, value2] of Object.entries(value["cities"])) {
+                    htmllistcities = htmllistcities + '<li><a href="index.html?sq=' + value2[2] + '&lang=en" class="itemlistadropdown">' + value2[0] + '</a></li>';
+                  }
+
+                    htmltobeinserted = htmltobeinserted +  '<li class="dropdown-subsubmenu"> ' +
+                       ' <a href="#" class="itemlistadropdown">' + value["country"][0] + '</a>' +
+                       ' <ul class="dropdown-menu">' + htmllistcities + '</ul> </li>' ;
+
+                        
+
+                });
+                $(".contentullicountriestravel").html(htmltobeinserted);
+            });
+
+        }
+    );
+</script>
     
   </body>
 </html>
