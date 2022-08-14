@@ -136,6 +136,10 @@ $( document ).ready(function() {
 
                     });
                     $(".contentphotos").html(htmltobeinsertedphotos);
+                    if (String(query) != "null"){
+                        filteronmainpage(query, lang);
+                        
+                    }
 
                     
                 });
