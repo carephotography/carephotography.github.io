@@ -63,7 +63,8 @@
         "country": ["Bosnia and Herzegovina", "Bósnia e Herzegovina"],
         "cities":{
         "1": ["All", "Todos", "bosnia"],
-        "2": ["Mostar", "Mostar", "mostar"]
+        "2": ["Mostar", "Mostar", "mostar"],
+        "3": ["Sarajevo", "Sarajevo", "sarajevo"]
         }
     }
     
