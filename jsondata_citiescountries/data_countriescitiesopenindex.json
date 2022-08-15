@@ -51,6 +51,20 @@
         "1": ["All", "Todos", "norway"],
         "2": ["Oslo", "Oslo", "oslo"]
         }
+    },
+    "8":{
+        "country": ["Sweden", "Suécia"],
+        "cities":{
+        "1": ["All", "Todos", "sweden"],
+        "2": ["Gothenburg", "Gotemburgo", "gothenburg"]
+        }
+    },
+    "9":{
+        "country": ["Bosnia and Herzegovina", "Bósnia e Herzegovina"],
+        "cities":{
+        "1": ["All", "Todos", "bosnia"],
+        "2": ["Mostar", "Mostar", "mostar"]
+        }
     }
     
   }

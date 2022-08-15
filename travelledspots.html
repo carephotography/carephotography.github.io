@@ -251,31 +251,33 @@
               <div id="europecountries" style="display: none;">
                 <ul class="nav nav-tabs">
                   <li class="nav-item">
-                    <a class="nav-link" onclick="openCity(event, 'Portugal')">Portugal</a>
+                    <a class="nav-link" onclick="openCity(event, 'Portugal')" href="#">Portugal</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" onclick="openCity(event, 'Spain')">Spain</a>
+                    <a class="nav-link" onclick="openCity(event, 'Spain')" href="#">Spain</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" onclick="openCity(event, 'Greece')">Spain</a>
+                    <a class="nav-link" onclick="openCity(event, 'Greece')" href="#">Greece</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" onclick="openCity(event, 'Italy')">Italy</a>
+                    <a class="nav-link" onclick="openCity(event, 'Italy')" href="#">Italy</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" onclick="openCity(event, 'Turkey')">Turkey</a>
+                    <a class="nav-link" onclick="openCity(event, 'Turkey')" href="#">Turkey</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" onclick="openCity(event, 'United Kingdom')">United Kingdom</a>
+                    <a class="nav-link" onclick="openCity(event, 'United Kingdom')" href="#">United Kingdom</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" onclick="openCity(event, 'Norway')">Norway</a>
+                    <a class="nav-link" onclick="openCity(event, 'Norway')" href="#">Norway</a>
                   </li>
                 </ul>
               </div>
 
               <div id="asiacountries" style="display: none;">
-                <p style="color:white; font-size: 17px;">I still haven't visited any country of this continent (yet!). Check my socials to check if I'm visiting another country!</p>
+                <li class="nav-item">
+                  <a class="nav-link" onclick="openCity(event, 'Turkey')" href="#">Turkey</a>
+                </li>
               </div>
               <div id="northamericacountries" style="display: none;">
                 <p style="color:white; font-size: 17px;">I still haven't visited any country of this continent (yet!). Check my socials to check if I'm visiting another country!</p>
@@ -289,7 +291,7 @@
               <div id="africaamericacountries" style="display: none;">
                 <ul class="nav nav-tabs">
                   <li class="nav-item">
-                    <a class="nav-link" onclick="openCity(event, 'Morocco')">Morocco</a>
+                    <a class="nav-link" onclick="openCity(event, 'Morocco')" href="#">Morocco</a>
                   </li>
                 </ul>
               </div>
@@ -302,14 +304,14 @@
             <div id="Portugal" class="tabcontent">
               <br><br>
               <p>Wanna check some photos? If the name is orange (country or city), I have some pictures that you can see! Try it!</p>
-              <h3 href="index.html?sq=portugal&lang=en">Portugal</h3>
+              <h3><a href="index.html?sq=portugal&lang=en">Portugal</a></h3>
               <ul>
-                <li href="index.html?sq=lisbon&lang=en">Lisbon</li>
+                <li><a href="index.html?sq=lisbon&lang=en">Lisbon</a></li>
                 <li>Porto</li>
                 <li>Aveiro</li>
                 <li>Braga</li>
                 <li>Madeira<ul>
-                  <li href="index.html?sq=madeira&lang=en">Madeira Island</li>
+                  <li><a href="index.html?sq=madeira&lang=en">Madeira Island</a></li>
                   <li>Porto Santo</li>
                   </ul>
                 </li>
@@ -319,8 +321,8 @@
                   <li>Pico</li>
                   </ul>
                 </li>
-                <li href="index.html?sq=lourinha&lang=en">Lourinhã</li>
-                <li href="index.html?sq=nazare&lang=en">Nazaré</li>
+                <li><a href="index.html?sq=lourinha&lang=en">Lourinhã</a></li>
+                <li><a href="index.html?sq=nazare&lang=en">Nazaré</a></li>
             </ul>
             </div>
 
@@ -339,10 +341,10 @@
             <div id="Greece" class="tabcontent">
               <br><br>
               <p>Wanna check some photos? If the name is orange (country or city), I have some pictures that you can see! Try it!</p>
-              <h3 href="index.html?sq=greece&lang=en">Greece</h3>
+              <h3><a href="index.html?sq=greece&lang=en">Greece</a></h3>
               <ul>
                 <li>Athens</li>
-                <li href="index.html?sq=crete&lang=en">Crete (Island)</li>
+                <li><a href="index.html?sq=crete&lang=en">Crete (Island)</a></li>
                 <li>Kefalonia (Island)</li>
                 <li>Meteora</li>
                 <li>Naxos (Island)</li>
@@ -355,36 +357,55 @@
             <div id="Italy" class="tabcontent">
               <br><br>
               <p>Wanna check some photos? If the name is orange (country or city), I have some pictures that you can see! Try it!</p>
-              <h3 href="index.html?sq=italy&lang=en">Italy</h3>
+              <h3><a href="index.html?sq=italy&lang=en">Italy</a></h3>
               <ul>
-                <li href="index.html?sq=lakecomo&lang=en">Lake Como</li>
+                <li><a href="index.html?sq=lakecomo&lang=en">Lake Como</a></li>
             </ul>
             </div>
 
             <div id="Turkey" class="tabcontent">
               <br><br>
               <p>Wanna check some photos? If the name is orange (country or city), I have some pictures that you can see! Try it!</p>
-              <h3 href="index.html?sq=turkey&lang=en">Turkey</h3>
+              <h3><a href="index.html?sq=turkey&lang=en">Turkey</a></h3>
               <ul>
-                <li href="index.html?sq=istanbul&lang=en">Istanbul</li>
+                <li><a href="index.html?sq=istanbul&lang=en">Istanbul</a></li>
             </ul>
             </div>
 
             <div id="United Kingdom" class="tabcontent">
               <br><br>
               <p>Wanna check some photos? If the name is orange (country or city), I have some pictures that you can see! Try it!</p>
-              <h3 href="index.html?sq=uk&lang=en">United Kingdom</h3>
+              <h3><a href="index.html?sq=portugal&lang=en">United Kingdom</a></h3>
               <ul>
-                <li href="index.html?sq=edinburgh_scotland&lang=en">Edinburgh - Scotland</li>
+                <li><a href="index.html?sq=edinburgh_scotland&lang=en">Edinburgh - Scotland</a></li>
             </ul>
             </div>
 
             <div id="Norway" class="tabcontent">
               <br><br>
               <p>Wanna check some photos? If the name is orange (country or city), I have some pictures that you can see! Try it!</p>
-              <h3 href="index.html?sq=norway&lang=en">Norway</h3>
+              <h3 ><a href="index.html?sq=norway&lang=en">Norway</a></h3>
               <ul>
-                <li href="index.html?sq=oslo&lang=en">Oslo</li>
+                <li><a href="index.html?sq=oslo&lang=en">Oslo</a></li>
+            </ul>
+            </div>
+
+            <div id="Sweden" class="tabcontent">
+              <br><br>
+              <p>Wanna check some photos? If the name is orange (country or city), I have some pictures that you can see! Try it!</p>
+              <h3 ><a href="index.html?sq=sweden&lang=en">Sweden</a></h3>
+              <ul>
+                <li><a href="index.html?sq=gothenburg&lang=en">Gothenburg</a></li>
+            </ul>
+            </div>
+
+            <div id="Bosnia" class="tabcontent">
+              <br><br>
+              <p>Wanna check some photos? If the name is orange (country or city), I have some pictures that you can see! Try it!</p>
+              <h3 ><a href="index.html?sq=bosnia&lang=en">Bosnia and Herzegovina</a></h3>
+              <ul>
+                <li><a href="index.html?sq=mostar&lang=en">Mostar</a></li>
+                <li><a href="index.html?sq=sarajevo&lang=en">Mostar</a></li>
             </ul>
             </div>
 
@@ -398,9 +419,9 @@
             <div id="Morocco" class="tabcontent">
               <br><br>
               <p>Wanna check some photos? If the name is orange (country or city), I have some pictures that you can see! Try it!</p>
-              <h3 href="index.html?sq=marrakesh&lang=en">Morocco</h3>
+              <h3><a href="index.html?sq=marrakesh&lang=en">Morocco</a></h3>
               <ul>
-                <li href="index.html?sq=marrakesh&lang=en">Marrakech</li>
+                <li><a href="index.html?sq=marrakesh&lang=en">Marrakech</a></li>
             </ul>
             </div>
 

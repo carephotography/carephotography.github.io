@@ -2256,7 +2256,7 @@
   "117":{
     "link_photo": "1lQb__rrxlUrQS92Z8drNAzS-Vs1rvEb_",
     "col_lg": "4",
-    "classes": ["greece", "crete"],
+    "classes": ["greece", "crete", "drone"],
     "location":{
       "pt":"Retimno, Creta, Grécia",
       "en":"Rethymno, Crete, Greece"
@@ -2419,6 +2419,398 @@
     "Gear":{
       "pt":"Sony a6400 | Sony E 50mm 1.8",
       "en":"Sony a6400 | Sony E 50mm 1.8"
+    },
+    "Story":{
+      "pt":" ",
+      "en":" "
+    }
+  }
+
+
+
+
+  ,
+  "126":{
+    "link_photo": "159ySO4tv-7l69NlvmJumPITMrs_AKwoy",
+    "col_lg": "2",
+    "classes": ["portugal", "lisbon"],
+    "location":{
+      "pt":"Monsanto Forest Park, Lisboa, Portugal",
+      "en":"Monsanto Forest Park, Lisbon, Portugal"
+    },
+    "Gear":{
+      "pt":"Nikon D5200 | AF-S DX NIKKOR 18-105mm f/3.5-5.6G ED VR",
+      "en":"Nikon D5200 | AF-S DX NIKKOR 18-105mm f/3.5-5.6G ED VR"
+    },
+    "Story":{
+      "pt":" ",
+      "en":" "
+    }
+  }
+
+  ,
+  "127":{
+    "link_photo": "14rpdV0eE6fbR5Nk74Oupf3bDUirX-58F",
+    "col_lg": "2",
+    "classes": ["portugal", "lisbon"],
+    "location":{
+      "pt":"Monsanto Forest Park, Lisboa, Portugal",
+      "en":"Monsanto Forest Park, Lisbon, Portugal"
+    },
+    "Gear":{
+      "pt":"Nikon D5200 | AF-S NIKKOR 50mm f/1.8G",
+      "en":"Nikon D5200 | AF-S NIKKOR 50mm f/1.8G"
+    },
+    "Story":{
+      "pt":" ",
+      "en":" "
+    }
+  }
+
+  ,
+  "128":{
+    "link_photo": "1CLU94odbvzmXrQ4QaE5pOuK2uiO3EWbs",
+    "col_lg": "4",
+    "classes": ["portugal", "lisbon"],
+    "location":{
+      "pt":"Monsanto Forest Park, Lisboa, Portugal",
+      "en":"Monsanto Forest Park, Lisbon, Portugal"
+    },
+    "Gear":{
+      "pt":"Nikon D5200 | AF-S DX NIKKOR 18-105mm f/3.5-5.6G ED VR",
+      "en":"Nikon D5200 | AF-S DX NIKKOR 18-105mm f/3.5-5.6G ED VR"
+    },
+    "Story":{
+      "pt":" ",
+      "en":" "
+    }
+  }
+
+  ,
+  "129":{
+    "link_photo": "1-iw2a3Ivypaw_ZqIoZUpHLJJcMKQJy9b",
+    "col_lg": "2",
+    "classes": ["portugal", "lisbon"],
+    "location":{
+      "pt":"Monsanto Forest Park, Lisboa, Portugal",
+      "en":"Monsanto Forest Park, Lisbon, Portugal"
+    },
+    "Gear":{
+      "pt":"Nikon D5200 | AF-S DX NIKKOR 18-105mm f/3.5-5.6G ED VR",
+      "en":"Nikon D5200 | AF-S DX NIKKOR 18-105mm f/3.5-5.6G ED VR"
+    },
+    "Story":{
+      "pt":" ",
+      "en":" "
+    }
+  }
+
+  ,
+  "130":{
+    "link_photo": "1qvnOziyEy88ppKLp-AnyRvj2dfiwM5pD",
+    "col_lg": "2",
+    "classes": ["portugal", "lisbon"],
+    "location":{
+      "pt":"Restaurante Panorâmico Monsanto, Lisboa, Portugal",
+      "en":"Restaurante Panorâmico Monsanto, Lisbon, Portugal"
+    },
+    "Gear":{
+      "pt":"Nikon D7200 | SIGMA 70-300 mm / 4-5.6 DG",
+      "en":"Nikon D7200 | SIGMA 70-300 mm / 4-5.6 DG"
+    },
+    "Story":{
+      "pt":" ",
+      "en":" "
+    }
+  }
+
+
+
+
+  ,
+  "131":{
+    "link_photo": "1ig_QspNXdNRKHd-L7k2BOeOBHQ7WUtoR",
+    "col_lg": "2",
+    "classes": ["sweden", "gothenburg"],
+    "location":{
+      "pt":"Gotemburgo, Suécia",
+      "en":"Gothenburg, Sweden"
+    },
+    "Gear":{
+      "pt":"Sony a6400 | Sony E 18-135mm F3.5-5.6 OSS",
+      "en":"Sony a6400 | Sony E 18-135mm F3.5-5.6 OSS"
+    },
+    "Story":{
+      "pt":" ",
+      "en":" "
+    }
+  }
+
+  ,
+  "132":{
+    "link_photo": "1L9-mLtdoac_ApamX-vkPZKzH-7T5OSrb",
+    "col_lg": "2",
+    "classes": ["sweden", "gothenburg"],
+    "location":{
+      "pt":"Gotemburgo, Suécia",
+      "en":"Gothenburg, Sweden"
+    },
+    "Gear":{
+      "pt":"Sony a6400 | Sony E 18-135mm F3.5-5.6 OSS",
+      "en":"Sony a6400 | Sony E 18-135mm F3.5-5.6 OSS"
+    },
+    "Story":{
+      "pt":" ",
+      "en":" "
+    }
+  }
+
+  ,
+  "133":{
+    "link_photo": "1IUnnvAcTibNQTf1wna8yTVxqOWDEyvj9",
+    "col_lg": "2",
+    "classes": ["sweden", "gothenburg"],
+    "location":{
+      "pt":"Gotemburgo, Suécia",
+      "en":"Gothenburg, Sweden"
+    },
+    "Gear":{
+      "pt":"Sony a6400 | Sony E 18-135mm F3.5-5.6 OSS",
+      "en":"Sony a6400 | Sony E 18-135mm F3.5-5.6 OSS"
+    },
+    "Story":{
+      "pt":" ",
+      "en":" "
+    }
+  }
+
+  ,
+  "134":{
+    "link_photo": "1n1UPN9fyQF7jUmsAlpkOsE7UD_iGAOir",
+    "col_lg": "2",
+    "classes": ["sweden", "gothenburg"],
+    "location":{
+      "pt":"Gotemburgo, Suécia",
+      "en":"Gothenburg, Sweden"
+    },
+    "Gear":{
+      "pt":"Sony a6400 | Sony E 18-135mm F3.5-5.6 OSS",
+      "en":"Sony a6400 | Sony E 18-135mm F3.5-5.6 OSS"
+    },
+    "Story":{
+      "pt":" ",
+      "en":" "
+    }
+  }
+
+  ,
+  "135":{
+    "link_photo": "1K4Dt6dXZFXmMkWtW_hfrj7XViNi3Uf7H",
+    "col_lg": "2",
+    "classes": ["sweden", "gothenburg"],
+    "location":{
+      "pt":"Gotemburgo, Suécia",
+      "en":"Gothenburg, Sweden"
+    },
+    "Gear":{
+      "pt":"Sony a6400 | Sony E 18-135mm F3.5-5.6 OSS",
+      "en":"Sony a6400 | Sony E 18-135mm F3.5-5.6 OSS"
+    },
+    "Story":{
+      "pt":" ",
+      "en":" "
+    }
+  }
+
+  ,
+  "136":{
+    "link_photo": "1S3G_juMX-HXeDZ2NMrmSo-myBSgIfkyh",
+    "col_lg": "2",
+    "classes": ["sweden", "gothenburg"],
+    "location":{
+      "pt":"Gotemburgo, Suécia",
+      "en":"Gothenburg, Suécia"
+    },
+    "Gear":{
+      "pt":"Sony a6400 | Sony E 18-135mm F3.5-5.6 OSS",
+      "en":"Sony a6400 | Sony E 18-135mm F3.5-5.6 OSS"
+    },
+    "Story":{
+      "pt":" ",
+      "en":" "
+    }
+  }
+
+
+
+
+  ,
+  "137":{
+    "link_photo": "1Tbim7hnT20AlGvCP1ePj-dyrWHM57Asp",
+    "col_lg": "4",
+    "classes": ["bosnia", "mostar"],
+    "location":{
+      "pt":"Mostar, Bósnia e Herzegovina",
+      "en":"Mostar, Bosnia and Herzegovina"
+    },
+    "Gear":{
+      "pt":"Nikon D5200 | AF-S DX NIKKOR 18-105mm f/3.5-5.6G ED VR",
+      "en":"Nikon D5200 | AF-S DX NIKKOR 18-105mm f/3.5-5.6G ED VR"
+    },
+    "Story":{
+      "pt":" ",
+      "en":" "
+    }
+  }
+
+  ,
+  "138":{
+    "link_photo": "1nGkM8x15RXWQ2eO99YfRFGtaKQnASHMI",
+    "col_lg": "4",
+    "classes": ["bosnia", "mostar"],
+    "location":{
+      "pt":"Mostar, Bósnia e Herzegovina",
+      "en":"Mostar, Bosnia and Herzegovina"
+    },
+    "Gear":{
+      "pt":"Nikon D5200 | AF-S DX NIKKOR 18-105mm f/3.5-5.6G ED VR",
+      "en":"Nikon D5200 | AF-S DX NIKKOR 18-105mm f/3.5-5.6G ED VR"
+    },
+    "Story":{
+      "pt":" ",
+      "en":" "
+    }
+  }
+
+  ,
+  "139":{
+    "link_photo": "19AoJiuXOfi_EmcGoOVo_CfP-SZ-MZ3MA",
+    "col_lg": "4",
+    "classes": ["bosnia", "mostar"],
+    "location":{
+      "pt":"Mostar, Bósnia e Herzegovina",
+      "en":"Mostar, Bosnia and Herzegovina"
+    },
+    "Gear":{
+      "pt":"Nikon D5200 | AF-S DX NIKKOR 18-105mm f/3.5-5.6G ED VR",
+      "en":"Nikon D5200 | AF-S DX NIKKOR 18-105mm f/3.5-5.6G ED VR"
+    },
+    "Story":{
+      "pt":" ",
+      "en":" "
+    }
+  }
+
+
+
+
+  ,
+  "140":{
+    "link_photo": "1KBFkE6DTG1yohh0Cvhi8NOn1XyotSli3",
+    "col_lg": "2",
+    "classes": ["sarajevo", "bosnia"],
+    "location":{
+      "pt":"Sarajevo, Bósnia e Herzegovina",
+      "en":"Sarajevo, Bosnia and Herzegovina"
+    },
+    "Gear":{
+      "pt":"Nikon D5200 | AF-S DX NIKKOR 18-105mm f/3.5-5.6G ED VR",
+      "en":"Nikon D5200 | AF-S DX NIKKOR 18-105mm f/3.5-5.6G ED VR"
+    },
+    "Story":{
+      "pt":" ",
+      "en":" "
+    }
+  }
+
+  ,
+  "141":{
+    "link_photo": "1AtgnMalyHAWBV7f2r1TvjL6lPDeB41hI",
+    "col_lg": "2",
+    "classes": ["sarajevo", "bosnia"],
+    "location":{
+      "pt":"Sarajevo, Bósnia e Herzegovina",
+      "en":"Sarajevo, Bosnia and Herzegovina"
+    },
+    "Gear":{
+      "pt":"Nikon D5200 | AF-S DX NIKKOR 18-105mm f/3.5-5.6G ED VR",
+      "en":"Nikon D5200 | AF-S DX NIKKOR 18-105mm f/3.5-5.6G ED VR"
+    },
+    "Story":{
+      "pt":" ",
+      "en":" "
+    }
+  }
+
+  ,
+  "142":{
+    "link_photo": "1CYMa8sVKo99ScISZnOpGp3cZgYf9i1md",
+    "col_lg": "2",
+    "classes": ["sarajevo", "bosnia"],
+    "location":{
+      "pt":"Sarajevo, Bósnia e Herzegovina",
+      "en":"Sarajevo, Bosnia and Herzegovina"
+    },
+    "Gear":{
+      "pt":"Nikon D5200 | AF-S DX NIKKOR 18-105mm f/3.5-5.6G ED VR",
+      "en":"Nikon D5200 | AF-S DX NIKKOR 18-105mm f/3.5-5.6G ED VR"
+    },
+    "Story":{
+      "pt":" ",
+      "en":" "
+    }
+  }
+
+  ,
+  "143":{
+    "link_photo": "1jSI77mem1Hm36ow_a90P62TM49I3hg1i",
+    "col_lg": "2",
+    "classes": ["sarajevo", "bosnia"],
+    "location":{
+      "pt":"Sarajevo, Bósnia e Herzegovina",
+      "en":"Sarajevo, Bosnia and Herzegovina"
+    },
+    "Gear":{
+      "pt":"Nikon D5200 | AF-S DX NIKKOR 18-105mm f/3.5-5.6G ED VR",
+      "en":"Nikon D5200 | AF-S DX NIKKOR 18-105mm f/3.5-5.6G ED VR"
+    },
+    "Story":{
+      "pt":" ",
+      "en":" "
+    }
+  }
+
+  ,
+  "144":{
+    "link_photo": "1VnPmJs4a3UTptn1vpuQnOw2OVtwIgb8e",
+    "col_lg": "2",
+    "classes": ["sarajevo", "bosnia"],
+    "location":{
+      "pt":"Sarajevo, Bósnia e Herzegovina",
+      "en":"Sarajevo, Bosnia and Herzegovina"
+    },
+    "Gear":{
+      "pt":"Nikon D5200 | AF-S DX NIKKOR 18-105mm f/3.5-5.6G ED VR",
+      "en":"Nikon D5200 | AF-S DX NIKKOR 18-105mm f/3.5-5.6G ED VR"
+    },
+    "Story":{
+      "pt":" ",
+      "en":" "
+    }
+  }
+
+  ,
+  "145":{
+    "link_photo": "1hwYQ7CGfg0s9aZfynugAKS_oKmO_VDjB",
+    "col_lg": "2",
+    "classes": ["sarajevo", "bosnia"],
+    "location":{
+      "pt":"Sarajevo, Bósnia e Herzegovina",
+      "en":"Sarajevo, Bosnia and Herzegovina"
+    },
+    "Gear":{
+      "pt":"Nikon D5200 | AF-S DX NIKKOR 18-105mm f/3.5-5.6G ED VR",
+      "en":"Nikon D5200 | AF-S DX NIKKOR 18-105mm f/3.5-5.6G ED VR"
     },
     "Story":{
       "pt":" ",

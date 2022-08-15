@@ -252,19 +252,33 @@
               <div id="europecountries" style="display: none;">
                 <ul class="nav nav-tabs">
                   <li class="nav-item">
-                    <a class="nav-link" onclick="openCity(event, 'Portugal')">Portugal</a>
+                    <a class="nav-link" onclick="openCity(event, 'Portugal')" href="#">Portugal</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" onclick="openCity(event, 'Spain')">Espanha</a>
+                    <a class="nav-link" onclick="openCity(event, 'Spain')" href="#">Espanha</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" onclick="openCity(event, 'Greece')">Grécia</a>
+                    <a class="nav-link" onclick="openCity(event, 'Greece')" href="#">Grécia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" onclick="openCity(event, 'Italy')" href="#">Itália</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" onclick="openCity(event, 'Turkey')" href="#">Turquia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" onclick="openCity(event, 'United Kingdom')" href="#">Reino Unido</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" onclick="openCity(event, 'Norway')" href="#">Noruega</a>
                   </li>
                 </ul>
               </div>
 
               <div id="asiacountries" style="display: none;">
-                <p style="color:white; font-size: 17px;">Ainda não visitei nenhum país deste continente (ainda!). Verifica as minhas redes sociais para verificar se estou a visitar outro país!</p>
+                <li class="nav-item">
+                  <a class="nav-link" onclick="openCity(event, 'Turkey')" href="#">Turquia</a>
+                </li>
               </div>
               <div id="northamericacountries" style="display: none;">
                 <p style="color:white; font-size: 17px;">Ainda não visitei nenhum país deste continente (ainda!). Verifica as minhas redes sociais para verificar se estou a visitar outro país!</p>
@@ -278,7 +292,7 @@
               <div id="africaamericacountries" style="display: none;">
                 <ul class="nav nav-tabs">
                   <li class="nav-item">
-                    <a class="nav-link" onclick="openCity(event, 'Morocco')">Marrocos</a>
+                    <a class="nav-link" onclick="openCity(event, 'Morocco')" href="#">Marrocos</a>
                   </li>
                 </ul>
               </div>
@@ -291,14 +305,14 @@
             <div id="Portugal" class="tabcontent">
               <br><br>
               <p>Queres ver algumas fotos? Se o nome estiver laranja (país ou cidade), tenho algumas fotos que podes ver! Tenta!</p>
-              <h3 href="index.html?sq=portugal&lang=pt">Portugal</h3>
+              <h3><a href="index.html?sq=portugal&lang=pt">Portugal</a></h3>
               <ul>
-                <li href="index.html?sq=lisbon&lang=pt">Lisboa</li>
+                <li><a href="index.html?sq=lisbon&lang=pt">Lisboa</a></li>
                 <li>Porto</li>
                 <li>Aveiro</li>
                 <li>Braga</li>
                 <li>Madeira<ul>
-                  <li href="index.html?sq=madeira&lang=pt">Ilha da Madeira</li>
+                  <li><a href="index.html?sq=madeira&lang=pt">Ilha da Madeira</a></li>
                   <li>Porto Santo</li>
                   </ul>
                 </li>
@@ -308,8 +322,8 @@
                   <li>Pico</li>
                   </ul>
                 </li>
-                <li href="index.html?sq=lourinha&lang=pt">Lourinhã</li>
-                <li href="index.html?sq=nazare&lang=pt">Nazaré</li>
+                <li><a href="index.html?sq=lourinha&lang=pt">PortLourinhãugal</a></li>
+                <li><a href="index.html?sq=nazare&lang=pt">Nazaré</a></li>
             </ul>
             </div>
 
@@ -328,10 +342,10 @@
             <div id="Greece" class="tabcontent">
               <br><br>
               <p>Queres ver algumas fotos? Se o nome estiver laranja (país ou cidade), tenho algumas fotos que podes ver! Tenta!</p>
-              <h3 href="index.html?sq=greece&lang=pt">Grécia</h3>
+              <h3><a href="index.html?sq=greece&lang=pt">Grécia</a></h3>
               <ul>
                 <li>Atenas</li>
-                <li href="index.html?sq=crete&lang=pt">Creta (Ilha)</li>
+                <li><a href="index.html?sq=crete&lang=pt">Creta (Ilha)</a></li>
                 <li>Kefalonia (Ilha)</li>
                 <li>Meteora</li>
                 <li>Naxos (Ilha)</li>
@@ -344,36 +358,55 @@
             <div id="Italy" class="tabcontent">
               <br><br>
               <p>Queres ver algumas fotos? Se o nome estiver laranja (país ou cidade), tenho algumas fotos que podes ver! Tenta!</p>
-              <h3 href="index.html?sq=italy&lang=pt">Itália</h3>
+              <h3><a href="index.html?sq=italy&lang=pt">Itália</a></h3>
               <ul>
-                <li href="index.html?sq=lakecomo&lang=pt">Lago Como</li>
+                <li><a href="index.html?sq=lakecomo&lang=pt">Lago Como</a></li>
             </ul>
             </div>
 
             <div id="Turkey" class="tabcontent">
               <br><br>
               <p>Queres ver algumas fotos? Se o nome estiver laranja (país ou cidade), tenho algumas fotos que podes ver! Tenta!</p>
-              <h3 href="index.html?sq=turkey&lang=pt">Turquia</h3>
+              <h3><a href="index.html?sq=turkey&lang=pt">Turquia</a></h3>
               <ul>
-                <li href="index.html?sq=istanbul&lang=pt">Istanbul</li>
+                <li><a href="index.html?sq=istanbul&lang=pt">Istanbul</a></li>
             </ul>
             </div>
 
             <div id="United Kingdom" class="tabcontent">
               <br><br>
               <p>Queres ver algumas fotos? Se o nome estiver laranja (país ou cidade), tenho algumas fotos que podes ver! Tenta!</p>
-              <h3 href="index.html?sq=uk&lang=pt">Reino Unido</h3>
+              <h3><a href="index.html?sq=uk&lang=pt">Reino Unido</a></h3>
               <ul>
-                <li href="index.html?sq=edinburgh_scotland&lang=pt">Edinburgh - Escócia</li>
+                <li><a href="index.html?sq=edinburgh_scotland&lang=pt">Edinburgh - Escócia</a></li>
             </ul>
             </div>
 
             <div id="Norway" class="tabcontent">
               <br><br>
               <p>Queres ver algumas fotos? Se o nome estiver laranja (país ou cidade), tenho algumas fotos que podes ver! Tenta!</p>
-              <h3 href="index.html?sq=norway&lang=pt">Noruega</h3>
+              <h3><a href="index.html?sq=norway&lang=pt">Noruega</a></h3>
               <ul>
-                <li href="index.html?sq=oslo&lang=pt">Oslo</li>
+                <li ><a href="index.html?sq=oslo&lang=pt">Oslo</a></li>
+            </ul>
+            </div>
+
+            <div id="Sweden" class="tabcontent">
+              <br><br>
+              <p>Queres ver algumas fotos? Se o nome estiver laranja (país ou cidade), tenho algumas fotos que podes ver! Tenta!</p>
+              <h3><a href="index.html?sq=sweden&lang=pt">Suécia</a></h3>
+              <ul>
+                <li ><a href="index.html?sq=gothenburg&lang=pt">Gotemburgo</a></li>
+            </ul>
+            </div>
+
+            <div id="Bosnia" class="tabcontent">
+              <br><br>
+              <p>Queres ver algumas fotos? Se o nome estiver laranja (país ou cidade), tenho algumas fotos que podes ver! Tenta!</p>
+              <h3><a href="index.html?sq=bosnia&lang=pt">Bósnia e Herzegovina</a></h3>
+              <ul>
+                <li ><a href="index.html?sq=mostar&lang=pt">Mostar</a></li>
+                <li ><a href="index.html?sq=sarajevo&lang=pt">Mostar</a></li>
             </ul>
             </div>
 
@@ -387,9 +420,9 @@
             <div id="Morocco" class="tabcontent">
               <br><br>
               <p>Queres ver algumas fotos? Se o nome estiver laranja (país ou cidade), tenho algumas fotos que podes ver! Tenta!</p>
-              <h3 href="index.html?sq=morroco&lang=pt">Marrocos</h3>
+              <h3><a href="index.html?sq=morroco&lang=pt">Marrocos</a></h3>
               <ul>
-                <li href="index.html?sq=marrakesh&lang=pt">Marrakech</li>
+                <li><a href="index.html?sq=marrakesh&lang=pt">Marrakech</a></li>
             </ul>
             </div>
 
