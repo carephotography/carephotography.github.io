@@ -29,7 +29,7 @@ CITIES =
    {namecity: 'Budapest', namecountry: 'Hungary', latitude: 47.5072994655785, longitude: 19.046483710178194, radius: 1, fillKey: 'city', date: ''},
 
    {namecity: 'Marrakech', namecountry: 'Morocco', latitude: 31.625854859466035, longitude: -7.988169816592562, radius: 1, fillKey: 'city', date: ''},
-   {namecity: 'İstanbul', namecountry: 'Turkey', latitude: 41.00966118033763, longitude: 28.975179758383863, radius: 1, fillKey: 'city', date: ''},
+   {namecity: 'Istanbul', namecountry: 'Turkey', latitude: 41.00966118033763, longitude: 28.975179758383863, radius: 1, fillKey: 'city', date: ''},
    {namecity: 'Amsterdam', namecountry: 'The Netherlands', latitude: 52.36380834082365, longitude: 4.886786744386697, radius: 1, fillKey: 'city', date: ''},
 
    {namecity: 'Mostar', namecountry: 'Bosnia and Herzegovina', latitude: 43.34355940219241, longitude: 17.80832432593862, radius: 1, fillKey: 'city', date: ''},
