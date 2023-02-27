@@ -50,4 +50,13 @@ CITIES =
    {namecity: 'Paros', namecountry: 'Greece', latitude: 37.08809019305238, longitude: 25.147294540336944, radius: 1, fillKey: 'city', date: ''},
    {namecity: 'Santorini', namecountry: 'Greece', latitude: 36.42741298775568, longitude: 25.432365465122423, radius: 1, fillKey: 'city', date: ''},
    {namecity: 'Zakynthos', namecountry: 'Greece ', latitude: 37.78223463971623, longitude: 20.87892386467863, radius: 1, fillKey: 'city', date: ''},
+
+   {namecity: 'Chiang Mai', namecountry: 'Thailand', latitude: 18.7897208651918, longitude: 98.98642981567619, radius: 1, fillKey: 'city', date: ''},
+   {namecity: 'Chiang Rai', namecountry: 'Thailand', latitude: 19.90721138034556, longitude: 99.83154062843879, radius: 1, fillKey: 'city', date: ''},
+   {namecity: 'Bangkok', namecountry: 'Thailand', latitude: 13.757286013363535, longitude: 100.50772043602963, radius: 1, fillKey: 'city', date: ''},
+   {namecity: 'Phuket', namecountry: 'Thailand', latitude: 7.883646064998765, longitude: 98.39351330952977, radius: 1, fillKey: 'city', date: ''},
+   {namecity: 'Koh Tao', namecountry: 'Thailand', latitude: 10.082950620839053, longitude: 99.82473738718005, radius: 1, fillKey: 'city', date: ''},
+   {namecity: 'Koh Phi Phi', namecountry: 'Thailand', latitude: 7.740680756093665, longitude: 98.77656968671276, radius: 1, fillKey: 'city', date: ''},
+
+
 ]

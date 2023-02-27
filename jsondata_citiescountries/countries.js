@@ -22,4 +22,5 @@ COUNTRIES =
     MAR: {fillKey: 'visited'},
     TUR: {fillKey: 'visited'},
     DOM: {fillKey: 'visited'},
+    THA: {fillKey: 'visited'},
 }
